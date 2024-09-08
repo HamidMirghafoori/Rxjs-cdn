@@ -1,0 +1,14 @@
+<b>Observer</b>
+Till now we weren't able to practically use the observables, because we needed to subscribe to the observable to make stream flow!
+Subscribe() method will tell to the observable to start emitting values, and it connects the observer (the one receiving data) with the observable (the one producing data).
+
+So, what is observer?
+An Observer is a consumer of values delivered by an Observable. It defines how to handle the data, errors, and the completion of the Observable stream.
+
+An Observer is essentially an object with the following methods:
+
+<i>next(value):</i> This method is called when the Observable emits a new value. It processes the emitted value.
+<i>error(err):</i> This method is called if the Observable encounters an error. After this, the Observable stops emitting any further values.
+<i>complete():</i> This method is called when the Observable has finished emitting all values. No more values will be sent after this.
+
+So the observer can be defined as following by defining what should be executed in each stage of observable lifecycle:
