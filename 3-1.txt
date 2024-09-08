@@ -1,5 +1,7 @@
 <b>of</b>
-Here is simple explanations if you don't want to check reference!
+Converts the arguments to an observable sequence.
+<i>Returns</i>
+An Observable that synchronously emits the arguments described above and then immediately completes.
 
 <i>Reference:</i>
-<a href="https://rxjs.dev/api/index/function/of" target="_blank">of()</a>
+<a href="https://rxjs.dev/api/index/function/of" target="_blank">of() operator</a>

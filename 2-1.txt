@@ -1,3 +1,7 @@
-of()
+<b>of</b>
+The task of <i>of</i> is to convert arguments to an observable sequence and then immediately completes.
 
-tutorial
+In our project we create a component named <i>StocksPricesComponent</i> which lists array of prices. 
+The definition <i>stockPrices$</i> happens in the class and it is used the in the template as following.
+of operator emits the values synchronously which means the order of values won't change. We used a hardcoded values which in future will be replaced with http api call.
+async pipe will take care of unsubscribing of the observable so we don't need to do it manually.

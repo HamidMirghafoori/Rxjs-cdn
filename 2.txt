@@ -1,1 +1,7 @@
-This is Tutorial
+To gain a practical understanding of RxJS operators and how they work, we’ve designed this tutorial around a hands-on project. This tutorial assumes readers are already familiar with Angular and JavaScript. 
+The project does not focus on front-end or back-end design, nor does it adhere to best practices on either end.
+
+The main objective of the project is to convey the core concepts of RxJS and their implementation. The final code will be available publicly on my GitHub repository.
+
+The project simulates managing a fictional stock system, creating imaginary scenarios to demonstrate the use of RxJS operators.
+This approach helps illustrate why each operator is needed and how it can be applied within the application. We’ll begin by introducing the most commonly used operators, progressively moving to more complex ones as the project evolves and we encounter more specific scenarios.
