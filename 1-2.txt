@@ -1,0 +1,8 @@
+<b>Reactive Programming</b>
+Reactive programming (RP) is a declarative programming paradigm focused on asynchronous data streams and the propagation of change. 
+It deals with the flow of data and how different components react to changes over time. 
+In RP, streams of data (like user inputs, web service responses, etc.) are treated as first-class citizens, and you define how to react when new data comes in.
+
+<b>First-class citizen</b>
+In JavaScript, when something is referred to as a first-class citizen (or first-class object), it means that the entity (typically functions in this context) is treated like any other variable.
+Meaning, we can treat function as following:

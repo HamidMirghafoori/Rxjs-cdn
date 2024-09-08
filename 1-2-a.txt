@@ -1,0 +1,5 @@
+<b>Core Concepts:</b>
+<i>Streams:</i> Continuous data sequences of any type that can be observed and reacted to. In Rxjs streams are represented by an <i>Observable</i>
+<i>Observers:</i> Entities that subscribe to streams and react to emitted values.
+<i>Propagation of Change:</i> Updates flow through streams automatically as data changes.
+<i>Asynchronous:</i> RP naturally handles asynchronous data, such as user inputs, events, or web requests.

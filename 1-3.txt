@@ -1,0 +1,2 @@
+<b>Stream and Observables</b>
+Here are various types of data that we can store in Observables as stream of data:

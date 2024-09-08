@@ -1,0 +1,3 @@
+To explain the continuous data sequence look at this example:
+In JavaScript we can define variables and perform calculation as example code A. The value C will always be 15 because its value is not tied to the current values of A or B.
+However, in Observables the value of C$ is always tied to the lates values of A or B, so in the same scenario the value of C$ will be 30.

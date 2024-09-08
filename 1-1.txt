@@ -1,0 +1,13 @@
+RxJS built on principles of functional and reactive programming. Let's look how these two differ?
+
+<b>Functional Programming</b>
+Functional programming (FP) is a programming paradigm focused on composing software by combining pure functions, avoiding shared state, and side effects. 
+The core ideas of FP include immutability, higher-order functions, and function composition.
+
+<b>Core Concepts:</b>
+<i>Pure Functions:</i> Functions that always return the same output for the same input and do not have side effects (no modifying external state)
+<i>Immutability:</i> Data cannot be changed after it is created. New data is derived from existing data instead.
+<i>First-Class and Higher-Order Functions:</i> Functions can be passed as arguments, returned as values, and stored in variables (first-class). Higher-order functions take functions as arguments or return a function as result.
+<i>Function Composition:</i> Combining simpler functions to build complex operations.
+
+Here are examples each concept:
