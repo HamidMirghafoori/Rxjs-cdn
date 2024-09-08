@@ -3,3 +3,5 @@
 <i>Observers:</i> Entities that subscribe to streams and react to emitted values.
 <i>Propagation of Change:</i> Updates flow through streams automatically as data changes.
 <i>Asynchronous:</i> RP naturally handles asynchronous data, such as user inputs, events, or web requests.
+
+To understand reactive programming we need to have a quick look at core concepts of Reactive programming first.

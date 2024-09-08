@@ -1,0 +1,20 @@
+<b>Observable</b>
+In the stream examples we were using observables symbolically, let's dive into its practical usage.
+A stream is represented as an observable. An RxJS Observable is a data structure used to represent a stream of asynchronous events or data over time. 
+It allows you to subscribe to the stream and react to new values, errors, or completions emitted by the Observable.
+
+<b>How it works</b>
+The observable is simply a blueprint or definition of the data would be generated over the time.
+Meaning, by defining an observable practically nothing will happen in the application. 
+Observable definition allows you to define how data will be emitted and how the Observable behaves.
+Observables will never executed unless there is at least one <i>observer</i>. (more on that later).
+
+The final note, each observable needs to be unsubscribed to avoid receiving further values and to clean up resources. This is particularly important for avoiding memory leaks.
+
+Observable constructor will take a function as argument which is called subscriber.
+We will use subscriber function to emit values via <i>subscriber.next(value)</i> function or report error <i>via subscriber.error(err)</i>, or signal that the data stream has completed via <i>subscriber.complete()</i> function.
+
+To make understanding of the concept easier, we start with RxJS creation operators to create observables.
+<i>of(args)</i> operator will convert provided arguments into observable. (Later we will look into it in detail).
+
+In code below, we define few observables:

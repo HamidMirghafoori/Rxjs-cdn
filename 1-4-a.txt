@@ -1,0 +1,11 @@
+a$ will return value 10 every time an observer request value from it. As it is just returning a simple integer value, obviously it will never return error. And finally, after returning value 10, it will emit complete() to let the observer the stream of data has completed and there will be no other data.
+so if observer just console.log(value), we will see number 10 is printed in console.
+
+On the other hand, b$ will behave the same, but instead of returning whole array, it will return each item separately till it reaches to the end of the array and emit complete() method.
+In this case if the observer logs the value we will have 5 logs in the console as following:
+1
+2
+3
+4
+5
+even though values are emitted right after each other, but they are separate values and they are not emitted at the exact same time.
