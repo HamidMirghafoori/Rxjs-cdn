@@ -1,0 +1,5 @@
+<b>of</b>
+Here is simple explanations if you don't want to check reference!
+
+<i>Reference:</i>
+<a href="https://rxjs.dev/api/index/function/of" target="_blank">of()</a>
