@@ -1,7 +1,10 @@
 <b>of</b>
-The task of <i>of</i> is to convert arguments to an observable sequence and then immediately completes.
+The <i>of</i> operator creates an observable that emits the provided arguments as a sequence and then completes immediately.
 
-In our project we create a component named <i>StocksPricesComponent</i> which lists array of prices. 
-The definition <i>stockPrices$</i> happens in the class and it is used the in the template as following.
-of operator emits the values synchronously which means the order of values won't change. We used a hardcoded values which in future will be replaced with http api call.
-async pipe will take care of unsubscribing of the observable so we don't need to do it manually.
+In our project, we aim to display a list of stocks along with their prices by defining a component called <i>StocksPricesComponent</i>.
+The observable <i>stockPrices$</i> is declared using of operator and utilized within the template. 
+The "of" operator generates an observable that returns the entire array synchronously, meaning each item passed to it must complete before the next one is processed.
+Currently, we are passing hardcoded values to the of operator, but these will eventually be replaced with data from an HTTP API call.
+We should use the <i>async</i> pipe  to manage subscriptions automatically, eliminating the need for manual unsubscription.
+
+<small>commit: stock-prices component</small>

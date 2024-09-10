@@ -1,0 +1,9 @@
+<b>pipe</b>
+The <i>pipe</i> operator accepts one or a series of <i>UnaryFunctions</i> (functions that only accept one parameter) and executes them one by one.
+The pipe operator will use the return value of the first function as input for the next function an so on till reach the last function.
+The return type of pipe is the return type of the last UnaryFunction.
+
+As a beginner if we want to put it in simple words, pipe operator is a utility function that helps us to execute multiple RxJS operators in sequence. 
+Pipe acts as a middleman who receives the data from observable and performs a sequence of tasks on the data.
+
+To have a better understanding let's add new functionality to our website using new RxJS operator.
