@@ -1,0 +1,9 @@
+<b>filter</b>
+The filter in RxJS functions similarly to JavaScript's filter method for arrays. 
+It filters the items coming from the source Observable, and only pass through those that meet a specific condition.
+
+In our sample project we want to filter stocks based on their price change status.
+
+
+
+<small>branch: map</small>

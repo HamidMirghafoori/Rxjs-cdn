@@ -11,9 +11,6 @@ Observables will never executed unless there is at least one <i>observer</i>. (m
 
 The final note, each observable needs to be unsubscribed to avoid receiving further values and to clean up resources. This is particularly important for avoiding memory leaks.
 
-Observable constructor will take a function as argument which is called subscriber.
-We will use subscriber function to emit values via <i>subscriber.next(value)</i> function or report error <i>via subscriber.error(err)</i>, or signal that the data stream has completed via <i>subscriber.complete()</i> function.
-
 To make understanding of the concept easier, we start with RxJS creation operators to create observables.
 <i>of(args)</i> operator will convert provided arguments into observable. (Later we will look into it in detail).
 

@@ -1,12 +1,22 @@
-<b>map</b>
-The map  in RxJS functions similarly to JavaScript's map method for arrays. It applies a provided function to each item emitted by the source observable, returning a new observable.
-The map operator needs an input data, so we have to use it inside pipe operator. In general most of RxJS operators will be used inside pipe operator.
+<b>subject</b>
+To understand subject let's review observable first:
+An Observable is:
+- unicast (one-to-one): Each subscription to an Observable is independent, and each subscriber receives its own separate execution.
+- cold : Observables do not emit any data until they are subscribed to, and each subscription starts its own independent stream of data.
+- read-only: An Observable only produces data; subscribers cannot push data back to the observable.
+- lazy: Observables are lazy, meaning they do nothing until someone subscribes to them, and the data stream is produced on a per-subscriber basis.
 
-In our sample project we want to change the background of each stock green if the change is positive and to red if it is negative. 
-Here are the main changes we need to do to achieve this goal:
-1 - we need to add new property to our data 
-2 - use that for styling data in template
+subject:
+A Subject is a special type of Observable that allows multi-casting, meaning it can emit values to multiple subscribers simultaneously. It acts as both an Observable and an Observer, so it can emit data, and subscribers can listen to those emissions.
+Key Characteristics:
+- Multicast (One-to-Many): A Subject broadcasts its data to all active subscribers, meaning all subscribers share the same execution.
+- Hot Observable: Unlike regular observables, a Subject starts emitting values as soon as it's created, even if no one is subscribed yet.
+- Can Push Values: You can manually emit values to a Subject using its next(), error(), and complete() methods. This makes Subject both an observable and an observer.
+- Active and Imperative: Subject is actively controlled, meaning you can decide when to emit new values, and all subscribers receive the same stream of data.
 
-At this stage, because we haven't learnt about other operators we had to implement the logic leading to redundant code. Later we will fix that.
-Also we used <i>BehaviorSubject</i> which we haven't talked about it. We used it to keep track of the selected option. BehaviorSubject is similar to observable but with additional features, we'll talk about it in near future.
-<small>branch: map</small>
+
+In our project we have two cards that display the name and stats of the selected stock. To be able to demonstrate subject in action, we subscribe two times to the subject so each subscription does its own calculation. 
+This is not a good practice, but it illustrates how subject emits one value to all its subscribers.
+Here you can see the main changes:
+
+<small>commit: subject</small>
