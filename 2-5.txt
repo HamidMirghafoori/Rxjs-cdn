@@ -1,5 +1,10 @@
 <b>BehaviorSubject</b>
 A BehaviorSubject in RxJS is a type of Subject that holds a current value and always emits the latest value to its subscribers when they subscribe.
 It ensures that every new subscriber receives the most recent emitted value, even if they subscribe after the value has been emitted.
+One of its main differences with subject is BehaviorSubject requires an initial value.
 
-In our project we want to have a submenu to select various options. Because observable does not have initial value we can't use it without extra effort to make it work as we need.
+In our project we want to have a submenu to select one of available options. 
+Previously in our project we used subject for this matter and as observable does not accept initial value we couldn't use it without extra effort to make it work as we need.
+But with BehaviorSubject we are able to do the same thing with less effort.
+
+<small>commit: BehaviorSubject</small>

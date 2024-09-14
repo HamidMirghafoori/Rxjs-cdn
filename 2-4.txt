@@ -3,10 +3,9 @@ The map in RxJS functions similarly to JavaScript's map method for arrays. It ap
 The map operator needs an input data, so we have to use it inside pipe operator. In general most of RxJS operators will be used inside pipe operator.
 
 In our sample project we want to change the background of each stock green if the change is positive and to red if it is negative. 
-Here are the main changes we need to do to achieve this goal:
-1 - we need to add new property to our data 
-2 - use that for styling data in template
+First we used subject to manage the option selection from options menu to trigger map logic, it is not RxJS way to do it but will current knowledge that's how we achieved it.
+Then we used map operator to add new property to our stocks and stored it in stockPricesMapped$ observable. 
 
-At this stage, because we haven't learnt about other operators we had to implement the logic leading to redundant code. Later we will fix that.
-Also we used <i>BehaviorSubject</i> which we haven't talked about it. We used it to keep track of the selected option. BehaviorSubject is similar to observable but with additional features, we'll talk about it in near future.
+Note that we used two times of(mockPrices) for two different observables. We can use our existing observable to build new observable by simply replacing of(mockPrices) with this.stockPrices$. 
+
 <small>branch: map</small>
