@@ -1,0 +1,7 @@
+<b>startWith</b>
+The startWith operator, at the moment of subscription will synchronously emit the value provided for it and then subscribes to the source and it will mirror all of source emissions.
+In simple word, startWith will start the observable emission with the given value at subscription time. 
+
+In our project the clock would appear after 1 second, because it needs to wait for the first emission of interval. Using startWith will start emission immediately so we will have clock from the time the component is rendered.
+
+<small>commit: startWith</small>
