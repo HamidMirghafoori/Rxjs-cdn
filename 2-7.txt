@@ -1,0 +1,6 @@
+<b>interval</b>
+The interval observable acts exactly the same as setInterval() in Javascript. The job of interval is to generate the emit sequential numbers starting from 0 every specified interval of time.
+
+In our project we want to create a digital clock, so we make use of interval. Our implementation has a minor issue, for the first second after rendering the header we have no clock! We'll fix that in the next lesson.
+
+<small>commit: interval</small>
