@@ -1,0 +1,8 @@
+<b>switchMap</b>
+In RxJS, switchMap is an operator that projects each value emitted by the source observable into a new inner observable. It subscribes to this inner observable and emits its values, but if a new value is emitted by the source, switchMap will unsubscribe from the previous inner observable and switch to the new one.
+In simple word, switchMap receives source observable value and returns new observable. If return observable ia async and takes time to return data such as api calls, with new values coming from source observable the previous subscription to return data will be canceled and new input will be used for subscription.
+
+In our project now we don't have async data, but we are going to use switchMap to switch between various outputs to filter stocks based on their gain direction.
+With this approach instead of creating 3 observables for each filter, we use single observable that its value gets updated with each change in filter selection.
+
+<small>commit: switchMap</small>
