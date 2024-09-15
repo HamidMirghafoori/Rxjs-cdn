@@ -1,0 +1,9 @@
+<b>forkJoin</b>
+forkJoin is an RxJS operator that allows you to execute multiple observables in parallel and wait for all of them to complete before emitting a single value. It’s particularly useful when you have multiple asynchronous operations and you want to perform some action only after all of them have completed.
+Basically:
+- forkJoin takes an array of observables and subscribes to all of them concurrently.
+-  It waits for all observables to complete before emitting a single array of the last emitted values from each observable.
+
+Now we have an array of symbols detail to find our top 10 stock!
+
+<small>commit: forkJoin</small>
