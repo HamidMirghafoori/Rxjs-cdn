@@ -1,0 +1,8 @@
+<b>shareReplay</b>
+The shareReplay is an operator in RxJS that allows you to share a single subscription to a source observable and replay the last emitted values to new subscribers. This is particularly useful when you want to avoid multiple executions of expensive operations (such as HTTP requests or complex calculations) and want to provide the latest emitted value to late subscribers.
+We can specify how many emissions to be replayed. 
+
+In our project we used api calls to fetch data, we noticed the api is called every time we click on option or navigate in the application. To avoid that we implemented shareReplay.
+However, this introduced a new issue, as we were no longer able to retrieve updated data when needed. To fix that we define new subject to force to refresh.
+
+<small>commit: shareReplay</small>
