@@ -1,0 +1,8 @@
+<b>mergeMap</b>
+The mergeMap is a powerful operator in RxJS used for handling observable streams where each emitted item from the source observable can itself be an observable. 
+Essentially, mergeMap maps each value from the source observable to an inner observable, and then merges all the inner observables into one single observable. 
+
+In our project we we want to have a list of top 10 stocks with highest peRatio value. For that we need to call an api to fetch list of symbols and for each item in the list we call another api to fetch the detailed information of that symbol.
+Using mergeMap we were able to call all detail api calls, but we still does not have list of all symbols with their details, which that will be resolved in next lesson.
+
+<small>commit: mergeMap</small>
