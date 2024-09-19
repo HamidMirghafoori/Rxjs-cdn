@@ -1,0 +1,10 @@
+<b>combineLatest</b>
+Combines multiple Observables to create an Observable whose values are calculated from the latest values of each of its input Observables
+So, combineLatest lets you keep track of the latest values from multiple sources and emit them together in real-time
+
+Our server has two endpoints for list of stocks, we already used the first one and the second one is called: stocks-price-part2
+Now we want to display all stocks together under one list. 
+To merge these two endpoints we need to use combineLatest which will waits both of api observables complete and then with the logic we provide combine both data as one observable.
+There is a small issue with our output, the first api always returns two stocks from list 2 attached at the end of its list, for now we have to remove them manually.
+
+<small>commit: combineLatest</small>
