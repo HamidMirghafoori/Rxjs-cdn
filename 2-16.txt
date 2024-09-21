@@ -1,0 +1,12 @@
+<b>concatMap</b>
+Projects each source value to an Observable which is merged in the output Observable, in a serialized fashion waiting for each one to complete before merging the next.
+In RxJS, concatMap is an operator used to map each value from an observable to an inner observable, subscribing to them in sequence. Unlike mergeMap or switchMap, which may subscribe to multiple inner observables simultaneously or cancel the previous ones, concatMap ensures that each inner observable completes before subscribing to the next one.
+It keeps the order of emits.
+
+In this exercise we want to fix delay issues for the first market price as well as having market name in the returned data.
+First we need to use concatMap instead of concat because concat subscribes to each observable sequentially, meaning that after the first realPrice$ completes, it moves to the second one.
+With concat we need to define two version of realPrice observable. one without delay and the second with delays so concat can execute them one after each other.
+But with concatMap we are able to apply delay conditionally. This way we can have first value immediately and for the rest we will have delay.
+To map market names we simply used of() to emit each market in sequence and used map to pass that value along with the price.
+
+<small>commit: concatMap</small>
