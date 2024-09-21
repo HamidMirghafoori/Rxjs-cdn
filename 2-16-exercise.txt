@@ -1,0 +1,27 @@
+<b>2-16-ex</b>
+if we click fast the streams will mix,
+we need to use switchMap to cancel the previous clicks
+so instead of using stock data from click we should pass it to observable
+
+this.symbolSelected$
+  .pipe(
+    switchMap((stock) => {
+      const realPrice$ = this.dataService.getRealtimePrice(stock.symbol);
+      return of('Nasdaq', 'NYSE', 'LSE').pipe(
+        concatMap((market) => {
+          return (
+            market === 'Nasdaq' ? realPrice$ : realPrice$.pipe(delay(2000))
+          ).pipe(map((price) => ({ price, market })));
+        })
+      );
+    })
+  )
+  .subscribe(({ price, market }) => {
+    this.stockRealtime$.next({
+      price,
+      market,
+      symbol: stock.symbol,
+    });
+  });
+
+<small>commit: 2-16-ex</small>
