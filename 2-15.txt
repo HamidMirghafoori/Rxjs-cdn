@@ -1,0 +1,9 @@
+<b>timer</b>
+The timer operator in RxJS is used to create an observable that emits a value after a specified delay and, optionally, continues emitting values at a specified interval.
+So we can have only one delay or if we want more than one the rest will be based on given duration.
+
+In our project we just wanted to see if we can have the same result as delay operator using timer.
+And after that we will deal with the minor issue we have. After clicking the stock we have to wait 2 seconds to see the first price
+We will fix it so we can see the first price immediately. 
+
+<small>commit: timer</small>
