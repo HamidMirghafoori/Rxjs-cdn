@@ -1,0 +1,8 @@
+<b>concat</b>
+Combines multiple Observables to create an Observable whose values are calculated from the latest values of each of its input Observables
+So, combineLatest lets you keep track of the latest values from multiple sources and emit them together in real-time
+
+Our server has an endpoint which is mocking websocket server. It returns stock new price. 
+We will use this endpoint 3 times to mock three stock market prices. The result wasn't what we expected so we will fix that in next lessons.
+
+<small>commit: concat</small>
