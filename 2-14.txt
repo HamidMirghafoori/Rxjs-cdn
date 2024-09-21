@@ -1,0 +1,9 @@
+<b>delay</b>
+The delay operator in RxJS is used to postpone the emission of values from an observable by a specified amount of time.
+It is equivalent of javascript setTimeout function. 
+
+To have some time to view each real time value we need to add delay between each emission. 
+But we still have a minor issue, which we will fix that in next lesson. 
+Before that we like to get the same result using another rxjs operator instead of delay.
+
+<small>commit: delay</small>
