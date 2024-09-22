@@ -1,5 +1,6 @@
 <b>tap</b>
 The tap operator in RxJS is used for side effects in an observable chain without modifying the emitted values. It's often used for logging, debugging, or performing actions based on the emitted values without affecting the data flow.
+Basically it is a function which will receive data from source observable and will not modify the data, so we can use that data for other purposes.
 
 In our project we decided instead of creating new observables for minRange and maxRange, we use simple attributes and updated them using tap() operator.
 
