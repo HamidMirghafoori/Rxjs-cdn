@@ -1,0 +1,11 @@
+<b>filter</b>
+The filter operator in RxJS is used to filter emissions from an observable stream based on a provided condition. It allows only those items from the source observable to pass through that satisfy the condition (a predicate function).
+Even though the filter logic is similar to Javascript Array.filter, however, 
+it may become confusing because observables can emit array of data, 
+the filter will pass or rejects the whole array in this scenario.
+If you planning to filter some items from emitted array data, filter will not work here. 
+We need to use Javascript Array.filter() function instead. 
+
+In our project to demonstrate the filter operator, we chose to display a list of stock sectors. Based on the selected sector, we show the information of a clicked stock, but only if the stock's sector matches the selected one.
+
+<small>commit: filter</small>
