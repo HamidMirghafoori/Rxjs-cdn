@@ -1,0 +1,10 @@
+<b>exhaustMap</b>
+The exhaustMap operator in RxJS is used to handle higher-order observable streams. It is particularly useful in scenarios where you want to ignore new emissions while an observable is already processing a previous emission.
+
+
+In our project switchMap was cancelling previous api calls and used the newest emission for api call, exhaustMap works in opposite direction. It just ignores new emissions while working on previous emission. 
+By checking network tab we can see for multiple clicks only one api call executed and the rest were ignored.
+This approach here works because our api returns response exactly after 2 seconds, what if api is fast?
+That's the topic of our next class.
+
+<small>commit: exhaustMap</small>
