@@ -1,0 +1,8 @@
+<b>fromEvent</b>
+The fromEvent operator in RxJS is used to create an observable from an event on a DOM element or an event emitter. It allows you to listen for events (like clicks, key presses, mouse movements, etc.) and convert them into a stream of values that can be processed with RxJS operators.
+
+
+In our project instead of using a function to handle click event of our button, we decided to use fromEvent operator so we can have better understanding on how it works.
+The idea is that we have an observable that every 8 seconds calls and endpoint to fetch the latest price of the stock, and we added a button to fetch the latest price right away.
+
+<small>commit: fromEvent</small>
