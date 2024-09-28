@@ -1,0 +1,8 @@
+<b>debounceTime</b>
+The debounceTime operator in RxJS is used to control the rate at which events are emitted from an observable. It helps in scenarios where you want to reduce the frequency of emissions over time, particularly in situations like search inputs, window resizing events, or any other rapid event streams.
+
+
+In our project we have a search field which is tied to an API which will fetch stock details from server. We assuming the data is changing in real time so fetching data is a must.
+We just need to add debounceTime before API call and this way we can avoid multiple calls when user is typing.
+
+<small>commit: debounceTime</small>
