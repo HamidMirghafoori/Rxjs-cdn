@@ -1,0 +1,8 @@
+<b>withLatestFrom</b>
+The withLatestFrom operator in RxJS is used to combine the latest values from multiple observables. It allows you to take values from one observable and combine them with the most recent values from other observables whenever a new value is emitted by the source observable.
+Important part is that if source observable does not emit anything withLatestFrom will not emit anything.
+
+In our project, we want to display the detailed information of a stock whenever it's clicked, but we only want to show the details for the last two stocks that were clicked.
+For this purpose we will use existing code and update it to achieve our goal.
+
+<small>commit: withLatestFrom</small>
