@@ -1,0 +1,6 @@
+<b>distinctUntilChanged</b>
+The distinctUntilChanged operator in RxJS is used to prevent an observable from emitting the same value consecutively. It ensures that only unique values, in terms of equality with the previous value, are passed through the observable stream. This operator is helpful in situations where you want to avoid processing redundant or duplicate data.
+
+In our project in our search field now we are debouncing to avoid multiple api calls, but if we change the content and re-enter the previous value, we will still calling API, distinctUntilChanged will help us to prevent that.
+
+<small>commit: distinctUntilChanged</small>
