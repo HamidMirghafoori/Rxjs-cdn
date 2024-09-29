@@ -1,0 +1,7 @@
+<b>last</b>
+The last() operator in RxJS is used to retrieve the last emitted value from an observable before it completes. It allows you to specify a condition, and it will emit the last value that meets that condition when the observable completes. If the observable completes without emitting any values, last() will throw an error unless a default value is provided.
+We will discuss the condition and errors in future classes.
+
+In our project, we want to have the last suggested stock displayed separately, to do so, we will use the last() operator.
+
+<small>commit: last</small>
