@@ -1,0 +1,8 @@
+<b>from</b>
+The from() operator in RxJS is used to convert various types of data sources, like arrays, promises, or iterables, into an observable. Once converted, the observable will emit each item from the source sequentially.
+If the source is an array or iterable, from() will emit each item in the sequence one after the other.
+
+In our project, we want to mimic a suggestion system that displays 10 suggested stocks to buy. We want to display each stock for 1 second and then display the next one.
+The code randomly picks 10 stock from allStocks$ and to be able to emit stocks one by one we will use from() operator.
+
+<small>commit: from</small>
