@@ -1,0 +1,7 @@
+<b>take</b>
+The take() operator in RxJS is used to limit the number of emissions from an observable. It allows you to specify how many values the observable should emit before it completes. Once the specified number of emissions has occurred, the observable automatically completes.
+So basically it will take the specified n number of emissions then it will complete the observable. Suitable for completing infinite observables.
+
+In our project, we want to get rid of manual calculation to take 5 stocks as our random suggestion, so we use take() operator to handle the task for us.
+
+<small>commit: take</small>
