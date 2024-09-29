@@ -1,0 +1,8 @@
+<b>first</b>
+The first() operator in RxJS is used to emit the first value from an observable sequence that satisfies an optional condition, or simply the very first value if no condition is provided. Once it emits this first value, it completes the observable stream.
+
+
+In our project, we want to have the first suggestion to be displayed separately. Using randomStocks$ we can apply first() operator to get the first selected stock.
+Note that we had to add shareReplay to randomStocks$ so every time it is called it returns the same output instead of recalculating again.
+
+<small>commit: first</small>
