@@ -1,1 +1,6 @@
-This Operators Reference!
+Chapter 3 is called intermediate because we are going to move toward operators that are used less frequently that the beginner chapter.
+We will try to explore deeper in their functionalities and you need to put more effort on writing more complex codes.
+
+In general the method is still the same, first the definition and explanation of the operator, then we checkout the the question commit and follow instructions to achieve requested result.
+We are still working on our project code base but the focus is not on adding more functionality or ideas to the stock application.
+We will start with blank page with all Angular components provided and instructions as comments.

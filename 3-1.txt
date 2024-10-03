@@ -1,7 +1,6 @@
-<b>of</b>
-Converts the arguments to an observable sequence.
-<i>Returns</i>
-An Observable that synchronously emits the arguments described above and then immediately completes.
+<b>catchError</b>
+The catchError operator in RxJS is used to handle errors in an observable stream. It allows you to catch an error that occurs during the emission of values and either handle it gracefully (by returning a fallback observable or some default value) or rethrow the error after logging or performing some side effects.
 
-<i>Reference:</i>
-<a href="https://rxjs.dev/api/index/function/of" target="_blank">of() operator</a>
+
+Checkout to the question commit of catchError branch, follow instructions written for catchError function.
+<small>commit: catchError</small>
