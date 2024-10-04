@@ -1,0 +1,7 @@
+<b>retry</b>
+The retry() operator in RxJS is a higher-order operator used to retry an observable sequence a specified number of times if it encounters an error. When the observable fails (i.e., emits an error), retry() will automatically re-subscribe to the source observable up to a specified number of times before propagating the error downstream
+This way we can avoid infinite error loops, or give some time for endpoints to recover in weak connections.
+Note that with retry we shouldn't return caught parameter in catchError, because it will restart the original observable and falls into infinite loop again.
+
+Checkout to the question commit of retry branch, follow instructions written for retry function.
+<small>commit: retry</small>
