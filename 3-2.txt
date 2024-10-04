@@ -1,0 +1,6 @@
+<b>throwError</b>
+The throwError operator creates an observable that emits an error. It's typically used when you want to signal an error condition in your observable stream
+We can just throw the message as error or use Javascript Error() to create new error.
+
+Checkout to the question commit of throwError branch, follow instructions written for throwError function.
+<small>commit: throwError</small>
