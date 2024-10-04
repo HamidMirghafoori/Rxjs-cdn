@@ -1,0 +1,8 @@
+<b>catchError - cont.</b>
+We already know how catchError works, but catchError callback function has two arguments. We already discussed the first argument which is the error object.
+The second argument is the observable that threw the error, It's the source observable that encountered the error.
+By returning the caught observable basically we are telling the observable to retry itself indefinitely unless we encounter other errors or the observable completes.
+
+
+Checkout to the question commit of catchError2 branch, follow instructions written for catchError2 function.
+<small>commit: catchError2</small>
