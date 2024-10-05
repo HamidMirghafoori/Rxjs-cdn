@@ -1,0 +1,6 @@
+<b>retryWhen</b>
+The retryWhen() operator in RxJS is a powerful tool that allows you to handle errors in your observable streams by retrying failed requests under certain conditions. Unlike the simpler retry() operator, which retries a specified number of times, retryWhen() provides more control over the retry logic, allowing you to define the conditions and the timing for retries based on the emitted errors.
+retryWhen is a suitable operator to retry failed api calls due to network issues with providing delay option to give time to network to recover.
+
+Checkout to the question commit of retryWhen branch, follow instructions written for retryWhen function.
+<small>commit: retryWhen</small>
