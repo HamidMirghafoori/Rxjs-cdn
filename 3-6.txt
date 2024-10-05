@@ -1,0 +1,7 @@
+<b>finalize</b>
+The finalize() operator in RxJS is used to perform some side-effect action when an observable completes or errors out. This operator ensures that the specified action will be executed once the observable's lifecycle is over, regardless of whether it completes successfully or throws an error.
+The finalize() operator is often used for clean up tasks like stopping loaders, closing resources, or resetting states, as it guarantees the action will be called at the end of the observable's execution.
+
+
+Checkout to the question commit of finalize branch, follow instructions written for finalize function.
+<small>commit: finalize</small>
