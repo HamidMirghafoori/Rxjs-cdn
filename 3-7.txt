@@ -1,0 +1,6 @@
+<b>onErrorResumeNext</b>
+The onErrorResumeNext operator in RxJS allows your observable to ignore any errors and continue with the next observable(s). It essentially tells your stream, "If an error occurs, don’t stop the entire stream, but rather resume with the next observable or values you provide."
+So basically it will emits the values from first observable and when it hits error or the first one completes it continues from the next provided observable.
+
+Checkout to the question commit of onErrorResumeNext branch, follow instructions written for onErrorResumeNext function.
+<small>commit: onErrorResumeNext</small>
