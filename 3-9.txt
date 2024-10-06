@@ -1,0 +1,16 @@
+<b>subscribe</b>
+In RxJS, the subscribe method is used to execute the observable and receive its emitted values. Meaning as long as there in no subscription the observable will not emit anything and will stay inactive.
+Subscribe allows you to register three callbacks the first one is called next will handle the data emitted by the observable over time, 
+the second callback function is called error which will executed if any error occurs in the stream, and the third callback is a notification callback which is called complete.
+complete callback will be executed when the subscribe completes. Note that complete will be called on successful completion of the observable, if any occurs happen, only error callback will be executed.
+The callbacks will pass to the subscribe as one object with following interface:
+{
+  next: (value) => void,
+  error?: (error) => void,
+  complete?: () => void
+}
+So far we had used only next callback, because the other two are optional.
+
+
+Checkout to the question commit of subscribe branch, follow instructions written for subscribe function.
+<small>commit: subscribe</small>
