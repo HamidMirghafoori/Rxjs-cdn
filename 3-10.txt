@@ -1,0 +1,25 @@
+<b>subject</b>
+In RxJS, Subjects are a special type of observable that allow values to be multicasted to many observers. They act as both an observer and an observable, which means you can subscribe to a subject and also push new values into it. This makes subjects particularly useful for scenarios where you need to share data or events between multiple parts of an application.
+We already discussed differences between subjects and observables in previous chapter. 
+Subject is a class, so it can't be used as operator. After instantiating a subject as following:
+const chatSubject = new Subject()
+We can use subject in following scenarios:
+- Multi-casting:
+we can subscribe to it as many times throughout our application and all subscriptions will receive the emitted value.
+- Event Emitter:
+In Angular services, subjects can be used as event emitter. This allows components to react to events without needing to be directly linked.
+Note the differences between EventEmitter and using a subject in a service as EventEmitter:
+* EventEmitter:
+Meant for local communication within Angular components and their parents. Commonly used to emit custom events from child components to parent components using Angular's @Output() decorator. Angular will take care of its lifecycle.
+* Subject
+More commonly used in services for sharing data or emitting events across different parts of an application. It’s especially useful when you want to implement a publish-subscribe pattern across different services or components that aren't directly related via templates
+We need to take care of subscriptions and memory leak.
+
+asObservable() method:
+Subjects are both Observable and Observer. While you might want to expose the observable part, it's often a good practice not to expose the subject itself to avoid unintended next() calls or modifications. 
+By using asObservable(), you ensure that the external consumers can only subscribe to the stream of values and can't emit new values
+
+Note: if a subject completes all subscriptions will be unsubscribed too.
+
+Checkout to the question commit of subject-part1 and part2 branches, follow instructions written for subject function.
+<small>commit: subject-part1 and part2</small>
