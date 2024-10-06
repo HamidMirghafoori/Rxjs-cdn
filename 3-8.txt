@@ -1,0 +1,5 @@
+<b>timeout</b>
+The timeout() operator in RxJS is used to throw an error if a source observable does not emit a value within a specified time period. It's useful when you want to ensure that an observable completes within a reasonable amount of time or when you need to handle situations where responses take too long.
+
+Checkout to the question commit of timeout branch, follow instructions written for timeout function.
+<small>commit: timeout</small>
