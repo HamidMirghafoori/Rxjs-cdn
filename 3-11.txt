@@ -1,0 +1,8 @@
+<b>behaviorSubject</b>
+In RxJS, the BehaviorSubject is a special kind of Subject that requires an initial value and emits its current value to new subscribers immediately upon subscription.
+A BehaviorSubject always holds the latest value that it has emitted. When a new subscriber joins, it will immediately receive the last emitted value, even if it was emitted before the subscription.
+We can get the last emitted value of the behaviorSubject via getValue() method without needing to subscribe.
+Because behaviorSubject is a class thus we have to instantiate it and we can't use it as operator.
+
+Checkout to the question commit of behaviorSubject branches, follow instructions written for behaviorSubject function.
+<small>commit: behaviorSubject</small>
