@@ -1,0 +1,6 @@
+<b>replaySubject</b>
+The ReplaySubject is a special kind of Subject in RxJS that allows you to cache and replay a specific number of emitted values (or all values) to new subscribers. It behaves like a normal Subject in that it can be subscribed to and emit values, but with the added ability to buffer and replay a certain number of previous values.
+Because replaySubject is a class thus we have to instantiate it and we can't use it as operator.
+
+Checkout to the question commit of replaySubject branches, follow instructions written for replaySubject function.
+<small>commit: replaySubject</small>
