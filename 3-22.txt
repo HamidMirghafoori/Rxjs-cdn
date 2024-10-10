@@ -1,0 +1,6 @@
+<b>window</b>
+The window operator in RxJS is used to split an observable into multiple "windows" of emissions. Each "window" is essentially an observable itself, which collects emitted values from the source observable over a certain period or based on another observable's emissions. Once the "window" closes, a new window is opened, and the process continues.
+window is similar to buffer, but instead of collecting values into arrays, window collects values into observables. Each window is a separate observable, and you can operate on these windows independently.
+
+Checkout to the question commit of window branches, follow instructions written for window function.
+<small>commit: window</small>
