@@ -1,0 +1,6 @@
+<b>bufferWhen</b>
+The bufferWhen operator in RxJS is used to collect emitted values from an observable into buffers. These buffers are emitted once a second observable (called a closing notifier) emits a value, which signals the completion of the current buffer and the start of a new one.
+This operator is useful when you want to collect and group values over a variable period, triggered by another observable.
+
+Checkout to the question commit of bufferWhen branches, follow instructions written for bufferWhen function.
+<small>commit: bufferWhen</small>
