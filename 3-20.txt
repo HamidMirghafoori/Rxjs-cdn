@@ -1,0 +1,10 @@
+<b>bufferToggle</b>
+The bufferToggle operator in RxJS is used to collect values emitted by the source Observable into buffers (arrays) and emit them when the buffers are opened and closed based on signals from two other Observables. It essentially toggles the opening and closing of buffers based on emissions from two Observables: one for when to start buffering and another to specify when to close and emit the buffer.
+The syntax of operator:
+bufferToggle(openings: Observable<O>, closingSelector: (value: O) => Observable<any>)
+openings can be any observable that emits a value
+closingSelector is a function which will receive the value emitted by openings observable (we can use the value or ignore it) and it emits a signal in return
+Note: if openings triggered and source completes bufferToggle will emit buffered values from openings time till completion of source.
+
+Checkout to the question commit of bufferToggle branches, follow instructions written for bufferToggle function.
+<small>commit: bufferToggle</small>
