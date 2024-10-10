@@ -1,0 +1,11 @@
+<b>bufferTime</b>
+The bufferTime operator in RxJS is used to collect emitted values from an observable over a specified period of time and then emit those values as an array. This can be useful for batching data or reducing the frequency of emissions
+bufferTime accepts three arguments which 2 of them are optional:
+1 - bufferTimeSpan: The duration (in milliseconds) for which to collect emitted values before emitting them as an array. After this duration, the collected values are emitted as a single array.
+2 - bufferCreationInterval: (optional): If provided, it specifies the interval at which a new buffer should be created. Instead of waiting for the first buffer to fill up, a new buffer will be started every bufferCreationInterval.
+Note if we provide arguments like this: (600, 1200) the first buffer will collect emits from 0-600 and 2nd buffer will be open from 1200-1800 and 3rd will be open from 2400-3000 etc.
+3 - maxBufferSize:  (optional): The maximum number of values that the buffer can hold. If the number of emitted values exceeds this size, older values will be discarded.
+Adding maxBufferSize limits the bufferCreationInterval results to given number.
+
+Checkout to the question commit of bufferTime branches, follow instructions written for bufferTime function.
+<small>commit: bufferTime</small>
