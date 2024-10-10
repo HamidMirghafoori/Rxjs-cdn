@@ -1,0 +1,9 @@
+<b>bufferCount</b>
+The bufferCount() operator in RxJS collects emitted values from an observable into arrays (buffers) and emits those arrays once the buffer reaches a specified size. This operator is useful when you want to group a certain number of values before processing them.
+bufferCount accepts to parameter, the first one is the size of buffer, the 2nd one is optional and called startBufferEvery.
+startBufferEvery determines how often to start a new buffer. If not provided, the buffers are created back-to-back. If specified, it starts a new buffer after the specified number of emissions.
+for example buffer(5,3) means we need buffers of 5 elements and after every 3 emits the next buffer should start. 
+This way we can have overlapping windows or gaps over the emitted values.
+
+Checkout to the question commit of bufferCount branches, follow instructions written for bufferCount function.
+<small>commit: bufferCount</small>
