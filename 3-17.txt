@@ -1,0 +1,6 @@
+<b>buffer</b>
+The buffer() operator in RxJS is used to collect emitted values from an observable over a specified period or until a specific condition is met, and then emit them as an array. Essentially, it "buffers" the emitted values until the specified signal is received, at which point it emits the buffered values as an array.
+
+
+Checkout to the question commit of buffer branches, follow instructions written for buffer function.
+<small>commit: buffer</small>
