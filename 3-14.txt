@@ -1,0 +1,7 @@
+<b>combineLatest</b>
+The combineLatest operator in RxJS is used to combine multiple observable streams and emit the latest values from each one whenever any of them emits a new value. It waits for each observable to emit at least one value, then emits an array (or a result of a function if provided) with the latest values from each source observable every time one of them changes.
+So when all observables emitted at least one value, the combineLatest will start to emit array of values of all observables, from there if any of them emits new value, the combineLatest will emit array of the latest values of all of them, so we can have repetitive values for some observables.
+combineLatest will stops emitting values if any of the observables throws error, and will unsubscribes from all after error.
+
+Checkout to the question commit of combineLatest branches, follow instructions written for combineLatest function.
+<small>commit: combineLatest</small>
