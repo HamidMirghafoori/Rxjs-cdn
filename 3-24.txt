@@ -1,0 +1,11 @@
+<b>windowTime</b>
+The windowTime operator in RxJS is used to split a source Observable into smaller windows, or grouped Observables, based on time. Each window collects emitted values for a specified duration and then closes, emitting a new Observable for the next window.
+windowTime accepts three arguments which 2 of them are optional:
+1 - windowTimeSpan: The duration (in milliseconds) for which to collect emitted values before emitting them as an array. After this duration, the collected values are emitted as a single array.
+2 - windowCreationInterval: (optional): If provided, it specifies the interval at which a new buffer should be created. Instead of waiting for the first buffer to fill up, a new buffer will be started every windowCreationInterval.
+Note if we provide arguments like this: (600, 1200) the first buffer will collect emits from 0-600 and 2nd buffer will be open from 1200-1800 and 3rd will be open from 2400-3000 etc.
+3 - maxWindowSize:  (optional): The maximum number of values that the buffer can hold. If the number of emitted values exceeds this size, older values will be discarded.
+Adding maxWindowSize limits the windowCreationInterval results to given number.
+
+Checkout to the question commit of windowTime branches, follow instructions written for windowTime function.
+<small>commit: windowTime</small>
