@@ -1,0 +1,12 @@
+<b>windowToggle</b>
+The windowToggle operator in RxJS is used to split a source Observable into "windows" (sub-Observables), based on opening and closing signals from other Observables. Each "window" is an Observable itself, which emits the values from the source Observable that fall within its time frame.
+Same as bufferToggle it is used for grouping values into time-limited batches based on external events (e.g., user clicks, sensor data).
+And segmenting data streams for processing only within specific time frames.
+The syntax of windowToggle operator:
+windowToggle(openings: Observable<O>, closingSelector: (value: O) => Observable<any>)
+openings can be any observable that emits a value
+closingSelector is a function which will receive the value emitted by openings observable (we can use the value or ignore it) and it emits a signal in return
+Note: if openings triggered and source completes windowToggle will emit buffered values from openings time till completion of source.
+
+Checkout to the question commit of windowToggle branches, follow instructions written for windowToggle function.
+<small>commit: windowToggle</small>
