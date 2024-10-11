@@ -1,0 +1,10 @@
+<b>takeUntil</b>
+The takeUntil operator in RxJS is a powerful tool used to control the lifetime of an observable. It allows you to emit values from the source observable until a notifier observable emits a value. Once the notifier emits, the source observable completes, and no further emissions are sent.
+This operator is particularly useful in managing subscriptions and ensuring that observables do not continue to emit values when they are no longer needed.
+
+<i>Syntax:</i>
+takeUntil(notifier: observableInput)
+Emits the values emitted by the source Observable until a notifier Observable emits a value.
+
+Checkout to the question commit of takeUntil branches, follow instructions written for takeUntil function.
+<small>commit: takeUntil</small>
