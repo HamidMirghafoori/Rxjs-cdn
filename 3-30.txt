@@ -1,0 +1,10 @@
+<b>takeWhile</b>
+The takeWhile operator in RxJS is used to emit values from an observable as long as a given condition (predicate) holds true. Once the condition evaluates to false for an emitted value, the observable completes, and no further values are emitted.
+
+<i>Syntax:</i>
+takeWhile(predicate: (value: T, index: number) => boolean, inclusive: boolean = false)
+predicate is a function that evaluates a value emitted by the source Observable and returns a boolean. Also takes the (zero-based) index as the second argument.
+inclusive: (Optional) Default is false. When set to true the value that caused predicate to return false will also be emitted.
+
+Checkout to the question commit of takeWhile branches, follow instructions written for takeWhile function.
+<small>commit: takeWhile</small>
