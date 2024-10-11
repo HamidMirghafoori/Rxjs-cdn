@@ -1,0 +1,8 @@
+<b>takeLast</b>
+In RxJS, the takeLast operator is used to emit the last n values emitted by an observable, and then complete. This operator is particularly useful when you want to gather the last few items from a stream of data before the observable completes.
+Syntax:
+takeLast(count: number)
+takes count number of values before source completion.
+
+Checkout to the question commit of takeLast branches, follow instructions written for takeLast function.
+<small>commit: takeLast</small>
