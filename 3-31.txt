@@ -1,0 +1,11 @@
+<b>groupBy</b>
+The groupBy operator in RxJS is used to group emitted values from an observable into separate observables, each of which corresponds to a unique key. It acts similarly to how SQL's GROUP BY works, except that instead of creating aggregated values, it creates individual grouped observables.
+
+<i>Syntax:</i>
+groupBy(keySelector: Fn, {element?: (value)=>value, duration?: (grouped)=> Observable})
+keySelector: A function that extracts a key from each emitted value. The groupBy operator uses this key to group values.
+element: A function that extracts the return element for each item. 
+duration: A function that returns an Observable to determine how long each group should exist.
+
+Checkout to the question commit of groupBy branches, follow instructions written for groupBy function.
+<small>commit: groupBy</small>
