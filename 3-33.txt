@@ -1,0 +1,15 @@
+<b>zipAll</b>
+It works on higher-order observables, meaning you have an observable that emits observables. Once all inner observables start emitting, zipAll will zip together their values based on their index.
+zipAll completes as soon as one of the input observables completes.
+
+<i>Syntax:</i>
+zipAll(resultSelector?: (...values)=> value): 
+resultSelector: this function is used to compute the created value from the input values
+
+zip vs zipAll
+- The key difference is that zipAll expects the outer observable to emit multiple inner observables, whereas zip works directly on a collection of observables.
+- zip: Can be used as a static creation operator.
+- zipAll: Used as a pipeable operator within an Observable's pipe method.
+
+Checkout to the question commit of zipAll branches, follow instructions written for zipAll function.
+<small>commit: zipAll</small>
