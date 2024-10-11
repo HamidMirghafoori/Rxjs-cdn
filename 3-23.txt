@@ -1,0 +1,6 @@
+<b>windowCount</b>
+he windowCount operator in RxJS is used to split an observable into multiple smaller observables (also known as windows), each of a fixed number of emitted values. It works similarly to bufferCount, but instead of emitting arrays of values, it emits observables, each containing a portion of the source observable's emissions.
+In summary, windowCount is useful when you want to divide an observable into smaller chunks of observables, each containing a specific number of emissions, and optionally control how often new windows are started.
+
+Checkout to the question commit of windowCount branches, follow instructions written for windowCount function.
+<small>commit: windowCount</small>
