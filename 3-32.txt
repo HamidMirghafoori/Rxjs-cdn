@@ -1,0 +1,10 @@
+<b>zip</b>
+The zip operator in RxJS is used to combine multiple observable streams and emit values in a paired fashion. It waits for each observable to emit a value, then combines these emitted values into an array or a result determined by a projection function. The key characteristic of zip is that it pairs the values based on the order in which they are emitted, meaning it only emits when all input observables have emitted at least one value.
+zip completes as soon as one of the input observables completes, which prevents it from waiting for values from the other observables. This ensures that the emitted arrays always have the same length.
+
+<i>Syntax:</i>
+zip(...Observables, resultSelector?: ()=>Observable)
+resultSelector: this function is used to compute the created value from the input values
+
+Checkout to the question commit of zip branches, follow instructions written for zip function.
+<small>commit: zip</small>
