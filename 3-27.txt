@@ -1,0 +1,8 @@
+<b>take</b>
+he take operator in RxJS is used to limit the number of emissions from an observable. It allows you to specify how many values you want to receive before completing the observable. This is particularly useful when you only need a certain number of values from a stream and want to avoid unnecessary processing or memory usage.
+Syntax:
+take(count: number)
+takes count number of values from beginning.
+
+Checkout to the question commit of take branches, follow instructions written for take function.
+<small>commit: take</small>
