@@ -1,0 +1,5 @@
+<b>windowWhen</b>
+The windowWhen operator in RxJS is used to collect emitted values from a source observable into window observables. A new window is emitted each time a second observable (called a closing notifier) emits a value or completes, signaling the completion of the current window and the start of a new one. This operator is useful when you want to collect and group values over a variable period, determined by another observable.
+
+Checkout to the question commit of windowWhen branches, follow instructions written for windowWhen function.
+<small>commit: windowWhen</small>
