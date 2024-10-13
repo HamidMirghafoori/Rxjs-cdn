@@ -1,0 +1,19 @@
+<b>throttle</b>
+The throttle() operator in RxJS is used to limit the number of emitted values from a source observable within a specific time period. It controls the rate at which emissions are allowed through by using a "throttling" strategy
+Throttle: Emits the first value and then suppresses subsequent values during the throttling duration
+
+Use cases
+Preventing frequent API requests within a short period.
+Limiting events like scroll or click handlers from being triggered too often.
+
+<i>Syntax:</i>
+throttle(durationSelector: (value) => ObservableInput, config?) : MonoTypeOperatorFunction
+durationSelector: A function that receives a value from the source Observable, for computing the silencing duration for each source value, returned as an ObservableInput.
+config: The optional configuration object that can specify how to handle the throttling behavior. The ThrottleConfig contains the following properties:
+leading: Whether to emit the first value in the throttling period (default is true).
+trailing: Whether to emit the last value in the throttling period after the throttling ends (default is false)
+
+Note if we set { leading: false, trailing: true } the behavior will be same as audit()
+
+Checkout to the question commit of throttle branches, follow instructions written for throttle function.
+<small>commit: throttle</small>
