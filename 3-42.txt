@@ -1,0 +1,11 @@
+<b>auditTime</b>
+The RxJS auditTime() operator is a throttling operator that emits the most recent value from the source Observable after a specified time period has passed. It waits for the given time span to elapse, then emits the latest value that was emitted during that period and ignores other values until the next time window starts.
+
+It's useful for scenarios where you need to sample or rate-limit events and want to ensure that the latest event in each time window is handled.
+Unlike throttleTime(), which emits the first value and ignores the rest until the period expires, auditTime() emits the last value after the time period ends.
+ 
+<i>Syntax:</i>
+auditTime(duration): MonoTypeOperatorFunction
+
+Checkout to the question commit of auditTime branches, follow instructions written for auditTime function.
+<small>commit: auditTime</small>
