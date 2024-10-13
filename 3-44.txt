@@ -1,0 +1,15 @@
+<b>throttleTime</b>
+The throttleTime() operator in RxJS is used to control the frequency of emitted values from an observable over time. It lets through one value and then ignores subsequent values for a specified duration before allowing the next value to pass through. This is useful for scenarios where you want to limit the rate of events, such as handling button clicks or mouse movements.
+throttleTime works same as throttle and the only difference is instead of passing a selector function we pass a time duration.
+
+<i>Syntax:</i>
+throttleTime(duration, config?): Observable
+duration: The amount of time (in milliseconds) during which the observable will ignore additional values after emitting the first one.
+config: The optional configuration object that can specify how to handle the throttling behavior. The ThrottleConfig contains the following properties:
+leading: Whether to emit the first value in the throttling period (default is true).
+trailing: Whether to emit the last value in the throttling period after the throttling ends (default is false)
+
+Note if we set { leading: false, trailing: true } the behavior will be same as audit()
+
+Checkout to the question commit of throttleTime branches, follow instructions written for throttleTime function.
+<small>commit: throttleTime</small>
