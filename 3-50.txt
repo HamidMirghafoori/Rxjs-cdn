@@ -1,0 +1,9 @@
+<b>skipLast</b>
+The RxJS skipLast() operator is used to filter out a specified number of values from the end of an observable stream. In other words, it skips the last n emitted values, where n is the argument passed to the operator.
+
+<i>Syntax:</i>
+skipLast(count): observable
+count: Number of elements to skip from the end of the source Observable.
+
+Checkout to the question commit of skipLast branches, follow instructions written for skipLast function.
+<small>commit: skipLast</small>
