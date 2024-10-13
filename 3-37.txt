@@ -1,0 +1,15 @@
+<b>mergeScan</b>
+Applies an accumulator function over the source Observable where the accumulator function itself returns an Observable, then each intermediate Observable returned is merged into the output Observable.
+The mergeScan operator in RxJS is used to apply an accumulator function over an observable stream, similar to how scan works, but with the added complexity of handling asynchronous operations. It merges the emitted values from each iteration into the output stream, rather than emitting each one immediately. This makes it useful when you're dealing with side-effects or asynchronous operations that need to be combined over time.
+
+<i>Syntax:</i>
+mergeScan(accumulator: (acc, value, index) => Observable, seed, concurrent = infinity): OperatorFunction
+accumulator is the argument we pass to reduce operator, it is an accumulator function with following arguments: 
+- acc:  the current accumulated value
+- value: value emitted by the source observable in the current iteration
+- index: The index represents the position of the emitted value in the sequence
+seed: the initial value of accumulated value, by default it is undefined
+concurrent: (optional) Maximum number of input Observables being subscribed to concurrently.
+
+Checkout to the question commit of mergeScan branches, follow instructions written for mergeScan function.
+<small>commit: mergeScan</small>
