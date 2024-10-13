@@ -1,0 +1,10 @@
+<b>skipWhile</b>
+The skipWhile() operator in RxJS allows you to ignore (or "skip") emitted values from an observable until a certain condition is no longer met. Once the condition becomes false, it starts emitting all subsequent values, regardless of whether they would satisfy the condition.
+
+<i>Syntax:</i>
+skipWhile(predicate: (value, index?) => boolean): observable
+predicate: A function to test each item emitted from the source Observable.
+index: predicate function receive an optional index of current value for internal calculation if needed
+
+Checkout to the question commit of skipWhile branches, follow instructions written for skipWhile function.
+<small>commit: skipWhile</small>
