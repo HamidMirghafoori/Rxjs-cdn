@@ -1,0 +1,12 @@
+<b>audit</b>
+The audit() operator in RxJS is used to ignore emitted values from the source Observable for a specific period of time by another observable. After that period ends, it emits the last value from the source Observable that was emitted during that period
+The duration of the audit period is determined by a secondary Observable, called the duration selector. Once this Observable emits a value, the audit period ends, and the operator is ready to emit a new value.
+
+audit() is useful when you want to limit how often the source Observable emits, but you want to ensure you capture the most recent emission within the time frame.
+It behaves similarly to throttle() but only emits the last value during the duration period, whereas throttle() emits the first value.
+
+<i>Syntax:</i>
+audit(durationSelector: (value) => ObservableInput): MonoTypeOperatorFunction
+
+Checkout to the question commit of audit branches, follow instructions written for audit function.
+<small>commit: audit</small>
