@@ -1,0 +1,9 @@
+<b>filter</b>
+The RxJS filter() operator is used to filter emissions from an observable based on a specified condition. It emits only the values that satisfy the condition provided by a predicate function.
+
+<i>Syntax:</i>
+filter(predicate: (value, index)=> boolean): Observable
+predicate is a function which evaluates the value and returns a boolean if it is false the value will be discarded.
+
+Checkout to the question commit of filter branches, follow instructions written for filter function.
+<small>commit: filter</small>
