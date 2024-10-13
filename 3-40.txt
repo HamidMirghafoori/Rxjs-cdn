@@ -1,0 +1,10 @@
+<b>partition</b>
+The partition() operator in RxJS is used to split an observable into two separate observables based on a predicate function. It is standalone function, meaning it is not pipeable. It works by applying the predicate to each value emitted by the source observable. If the predicate returns true, the value is sent to the first observable; if it returns false, the value is sent to the second observable.
+In other words, partition() is like a filter that produces two streams: one for values that match the condition, and one for values that don't.
+
+<i>Syntax:</i>
+partition(Observables[], predicate: (value, index)=> boolean): Observable
+predicate is a function which evaluates the value and returns a boolean if it is false the value will be discarded.
+
+Checkout to the question commit of partition branches, follow instructions written for partition function.
+<small>commit: partition</small>
