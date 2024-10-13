@@ -1,0 +1,10 @@
+<b>skipUntil</b>
+The RxJS skipLast() operator is used to filter out a specified number of values from the end of an observable stream. In other words, it skips the last n emitted values, where n is the argument passed to the operator.
+Before the notifier emits, all values from the source are ignored.
+
+<i>Syntax:</i>
+skipUntil(notifier): observable
+notifier: The Observable that triggers the start of emission.
+
+Checkout to the question commit of skipUntil branches, follow instructions written for skipUntil function.
+<small>commit: skipUntil</small>
