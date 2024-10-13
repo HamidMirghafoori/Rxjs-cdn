@@ -1,0 +1,10 @@
+<b>count</b>
+The count operator in RxJS is used to count the number of emissions made by an observable before it completes. It works by tracking how many values have been emitted by the source observable and emits the final count as a single value when the source completes.
+
+<i>Syntax:</i>
+count(predicate: (value, index?) => boolean): observable
+predicate: A function that is used to analyze the value and the index and determine whether or not to increment the count. Return true to increment the count, and return false to keep the count the same. If the predicate is not provided, every value will be counted.
+index: predicate function receive an optional index of current value for internal calculation if needed
+
+Checkout to the question commit of count branches, follow instructions written for count function.
+<small>commit: count</small>
