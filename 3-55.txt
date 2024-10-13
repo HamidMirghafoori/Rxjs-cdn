@@ -1,0 +1,13 @@
+<b>last</b>
+The last() operator in RxJS is used to emit the last value from an observable sequence when it completes. It can also emit a default value if no values have been emitted before the observable completes.
+
+<i>Syntax:</i>
+last(predicate?: (value, index, source) => boolean, defaultValue?): observable
+predicate: An optional function called with each item to test for condition matching
+index: predicate function receive an optional index of current value for internal calculation if needed
+source: The source parameter refers to the original observable (or source observable) that is emitting the values. When using a predicate function in the first operator, the third argument in the predicate provides access to this original observable, allowing you to inspect or interact with the observable within the predicate function.
+
+defaultValue: The default value emitted in case no valid value was found on the source
+
+Checkout to the question commit of last branches, follow instructions written for last function.
+<small>commit: last</small>
