@@ -1,0 +1,11 @@
+<b>single</b>
+The single() operator in RxJS is used to emit a single value from an observable that meets a specific condition. If the observable emits more than one value, or if it completes without emitting any values that satisfy the condition, it will throw an error. This operator is particularly useful when you expect an observable to emit at most one value.
+
+<i>Syntax:</i>
+single(predicate?: (value, index, source) => boolean): observable
+predicate: An optional function called with each item to test for condition matching
+index: predicate function receive an optional index of current value for internal calculation if needed
+source: The source parameter refers to the original observable (or source observable) that is emitting the values. When using a predicate function in the first operator, the third argument in the predicate provides access to this original observable, allowing you to inspect or interact with the observable within the predicate function.
+
+Checkout to the question commit of single branches, follow instructions written for single function.
+<small>commit: single</small>
