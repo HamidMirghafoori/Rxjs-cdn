@@ -1,0 +1,9 @@
+<b>skip</b>
+The RxJS skip() operator is used to skip a specified number of emissions from an observable and pass through the remaining ones. This is useful when you want to ignore a certain number of values at the beginning of the observable stream
+
+<i>Syntax:</i>
+skip(count): observable
+count: The number of times, items emitted by source Observable should be skipped.
+
+Checkout to the question commit of skip branches, follow instructions written for skip function.
+<small>commit: skip</small>
