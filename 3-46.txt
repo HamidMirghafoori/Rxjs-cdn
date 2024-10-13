@@ -1,0 +1,9 @@
+<b>debounceTime</b>
+The RxJS debounceTime operator is used to limit the rate of emitted values from an observable by delaying the emission until a specified duration of time has passed without receiving another value. Essentially, it waits for a "quiet" period before emitting the latest value. If another value arrives before the time period completes, the timer resets, and it waits again
+
+<i>Syntax:</i>
+debounceTime(dueTime):  observable
+dueTime: The timeout duration in milliseconds for the window of time required to wait for emission silence before emitting the most recent source value
+
+Checkout to the question commit of debounceTime branches, follow instructions written for debounceTime function.
+<small>commit: debounceTime</small>
