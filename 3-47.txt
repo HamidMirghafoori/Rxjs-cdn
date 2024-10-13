@@ -1,0 +1,9 @@
+<b>sample</b>
+The RxJS sample() operator emits the most recent value from the source observable whenever another observable (the "notifier" observable) emits a value. This means that it "samples" the source observable based on the timing of the notifier observable's emissions. If the source observable hasn't emitted a value since the last sampling, sample() will skip that emission.
+
+<i>Syntax:</i>
+sample(notifier):  observable
+notifier: The ObservableInput to use for sampling the source Observable
+
+Checkout to the question commit of sample branches, follow instructions written for sample function.
+<small>commit: sample</small>
