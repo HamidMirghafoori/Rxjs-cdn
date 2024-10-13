@@ -1,0 +1,14 @@
+<b>reduce</b>
+The reduce operator in RxJS is similar to the Array.reduce method in JavaScript, but it works with observables. It applies an accumulator function to the values emitted by the source observable, accumulating them into a single result when the observable completes.
+reduce does not emit intermediate results. It only emits after the source observable completes. For intermediate results, you can use scan.
+
+<i>Syntax:</i>
+reduce(accumulator: (acc, value, index) => result, seed): OperatorFunction
+accumulator is the argument we pass to reduce operator, it is an accumulator function with following arguments: 
+- acc:  the current accumulated value
+- value: value emitted by the source observable in the current iteration
+- index: The index represents the position of the emitted value in the sequence
+seed: the initial value of accumulated value, by default it is undefined
+
+Checkout to the question commit of reduce branches, follow instructions written for reduce function.
+<small>commit: reduce</small>
