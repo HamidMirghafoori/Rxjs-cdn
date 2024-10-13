@@ -1,0 +1,13 @@
+<b>scan</b>
+The scan operator in RxJS is similar to the reduce function in JavaScript, but it emits the intermediate accumulation values along the way. Essentially, scan applies an accumulator function over the source Observable and returns each intermediate result, which can be used to maintain state or accumulate data over time.
+
+<i>Syntax:</i>
+scan(accumulator: (acc, value, index) => result, seed): OperatorFunction
+accumulator is the argument we pass to reduce operator, it is an accumulator function with following arguments: 
+- acc:  the current accumulated value
+- value: value emitted by the source observable in the current iteration
+- index: The index represents the position of the emitted value in the sequence
+seed: the initial value of accumulated value, by default it is undefined
+
+Checkout to the question commit of scan branches, follow instructions written for scan function.
+<small>commit: scan</small>
