@@ -1,0 +1,9 @@
+<b>sampleTime</b>
+The sampleTime operator in RxJS emits the latest value from an observable at specified time intervals. It works by "sampling" the source observable periodically, and if there’s a value emitted by the source during the sampling period, sampleTime emits that value. If there are no values emitted during that interval, it skips the emission for that period
+
+<i>Syntax:</i>
+sampleTime(period): observable
+period: The sampling period expressed in milliseconds
+
+Checkout to the question commit of sampleTime branches, follow instructions written for sampleTime function.
+<small>commit: sampleTime</small>
