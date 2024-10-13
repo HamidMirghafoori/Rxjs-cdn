@@ -1,0 +1,14 @@
+<b>debounce</b>
+The RxJS debounce() operator is used to delay the emission of items from an observable based on a provided time duration. It waits until there's a pause in the emissions (i.e., no new values are emitted) for a specified amount of time before passing the last emitted value.
+debounce waits for first source emission without emitting the source emission and then waits for the emission of durationSelector, if durationSelector emits and there was no new emission from source it will emit the last emission of the source.
+If source emits new value while durationSelector still waiting for completion, then debounce restarts durationSelector and discards previous waiting time and will consider the new emission as the latest value.
+So debounce emits only if durationSelector completes otherwise, this way it will ignores all quick emissions.
+
+Note that throttle will emit when durationSelector completes and is not tied to the time after last emission.
+
+<i>Syntax:</i>
+debounce(durationSelector):  observable
+durationSelector: A function that receives a value from the source Observable, for computing the timeout duration for each source value, returned as an Observable or a Promise
+
+Checkout to the question commit of debounce branches, follow instructions written for debounce function.
+<small>commit: debounce</small>
