@@ -1,0 +1,14 @@
+<b>switchScan</b>
+The switchScan operator in RxJS is similar to scan but with a key difference: it switches to a new inner observable and cancels the previous one whenever a new value is emitted by the source observable.
+switchScan will discard the accumulator function result if the new emitted value occur before accumulator function return value.
+
+<i>Syntax:</i>
+switchScan(accumulator: (acc, value, index) => Observable, seed, concurrent = infinity): OperatorFunction
+accumulator is the argument we pass to reduce operator, it is an accumulator function with following arguments: 
+- acc:  the current accumulated value
+- value: value emitted by the source observable in the current iteration
+- index: The index represents the position of the emitted value in the sequence
+seed: the initial value of accumulated value, by default it is undefined
+
+Checkout to the question commit of switchScan branches, follow instructions written for switchScan function.
+<small>commit: switchScan</small>
