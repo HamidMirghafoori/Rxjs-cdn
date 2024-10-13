@@ -1,0 +1,9 @@
+<b>zipWith</b>
+The zipWith operator in RxJS is used to combine the emissions of multiple observables. It works by "zipping" the values from two or more observables together, emitting an array or custom output that contains one value from each observable every time they all emit.
+zipWith is works exactly same as zip(), the only difference is that zip() is standalone function and zipWith() is a pipeable function.
+
+<i>Syntax:</i>
+zipWith(...observables): 
+
+Checkout to the question commit of zipWith branches, follow instructions written for zipWith function.
+<small>commit: zipWith</small>
