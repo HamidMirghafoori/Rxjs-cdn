@@ -1,0 +1,8 @@
+<b>of</b>
+The RxJS of() operator is used to create an observable that emits the arguments you provide to it. It turns values or a sequence of values into an observable stream that can be subscribed to. It’s a simple and commonly used operator when you want to start with specific values
+
+<i>Syntax:</i>
+of(...values): Observable
+
+Checkout to the question commit of of branches, follow instructions written for of function.
+<small>commit: of</small>
