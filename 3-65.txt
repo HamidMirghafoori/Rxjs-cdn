@@ -1,0 +1,8 @@
+<b>raceWith</b>
+The raceWith() operator in RxJS is used to race multiple observables, emitting values from only the observable that emits a value first. Once one of the observables starts emitting, the other observables are ignored, and all subsequent values come from that "winning" observable.
+
+<i>Syntax:</i>
+raceWith(...observables): Observable
+
+Checkout to the question commit of raceWith branches, follow instructions written for raceWith function.
+<small>commit: raceWith</small>
