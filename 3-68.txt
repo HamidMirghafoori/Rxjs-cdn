@@ -1,0 +1,10 @@
+<b>timer</b>
+The RxJS timer() operator is used to emit values after a specified delay and completes. It can optionally emit values at regular intervals thereafter.
+
+<i>Syntax:</i>
+timer(dueTime, interval?): Observable
+dueTime:  The initial delay in milliseconds before the first emission
+interval: (optional): The interval in milliseconds between subsequent emissions after the first one.
+
+Checkout to the question commit of timer branches, follow instructions written for timer function.
+<small>commit: timer</small>
