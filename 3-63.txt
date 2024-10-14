@@ -1,0 +1,9 @@
+<b>endWith</b>
+The endWith() operator in RxJS is used to append specific values to the end of an observable sequence. It essentially emits all the values from the source observable as usual, and once the source completes, it emits the specified values provided to endWith().
+Note: This is useful for knowing when an observable ends. Particularly when paired with an operator like takeUntil
+
+<i>Syntax:</i>
+endWith(...values): Observable
+
+Checkout to the question commit of endWith branches, follow instructions written for endWith function.
+<small>commit: endWith</small>
