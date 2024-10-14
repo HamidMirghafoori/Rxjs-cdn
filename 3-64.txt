@@ -1,0 +1,8 @@
+<b>startWith</b>
+The startWith operator in RxJS is used to emit a specified value or values immediately when the observable starts. It is useful when you want to emit a default or initial value before the observable begins emitting its regular values.
+
+<i>Syntax:</i>
+startWith(...values): Observable
+
+Checkout to the question commit of startWith branches, follow instructions written for startWith function.
+<small>commit: startWith</small>
