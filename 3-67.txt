@@ -1,0 +1,10 @@
+<b>range</b>
+The RxJS range() operator creates an Observable that emits a sequence of numbers within a specified range and then completes. It is useful when you need a sequence of numbers for things like loops, counters, or simple range-related operations in RxJS streams.
+
+<i>Syntax:</i>
+range(start, count): Observable
+start: starting value
+count: total number of sequential numbers to emit
+
+Checkout to the question commit of range branches, follow instructions written for range function.
+<small>commit: range</small>
