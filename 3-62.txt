@@ -1,0 +1,12 @@
+<b>every</b>
+The RxJS every() operator checks if all emitted values from an observable meet a specified condition and emits true if they do. If any value fails the condition, it immediately emits false and completes the observable.
+
+<i>Syntax:</i>
+every(predicate: (value, index, source) => boolean): Observable
+predicate: A function called with each item to test for condition matching
+value: The current value being processed in the observable.
+index: predicate function receive an index of current value
+source: The source parameter refers to the original observable (or source observable) that is emitting the values. When using a predicate function in the first operator, the third argument in the predicate provides access to this original observable, allowing you to inspect or interact with the observable within the predicate function.
+
+Checkout to the question commit of every branches, follow instructions written for every function.
+<small>commit: every</small>
