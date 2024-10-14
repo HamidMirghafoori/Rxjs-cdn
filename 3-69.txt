@@ -1,0 +1,9 @@
+<b>interval</b>
+The RxJS interval() operator is used to create an Observable that emits a sequence of numbers at a constant time interval. The first emission is 0, and it increments by 1 on each subsequent emission. It’s commonly used for tasks like polling, animations, or updating a UI at regular intervals.
+
+<i>Syntax:</i>
+interval(period): Observable
+period: The interval in milliseconds between each emission.
+
+Checkout to the question commit of interval branches, follow instructions written for interval function.
+<small>commit: interval</small>
