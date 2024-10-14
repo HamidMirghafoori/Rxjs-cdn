@@ -1,0 +1,12 @@
+<b>findIndex</b>
+The findIndex() operator in RxJS is used to find the index of the first emitted value from the source observable that matches a specified predicate (condition). Once it finds a match, it emits the index of that item and completes. If no value matches the predicate, it emits -1 and completes.
+
+<i>Syntax:</i>
+findIndex(predicate: (value, index, source?)=> boolean): observable
+predicate: A function called with each item to test for condition matching
+value: The current value being processed in the observable.
+index: predicate function receive an index of current value
+source: The source parameter refers to the original observable (or source observable) that is emitting the values. When using a predicate function in the first operator, the third argument in the predicate provides access to this original observable, allowing you to inspect or interact with the observable within the predicate function.
+
+Checkout to the question commit of findIndex branches, follow instructions written for findIndex function.
+<small>commit: findIndex</small>
