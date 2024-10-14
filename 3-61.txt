@@ -1,0 +1,9 @@
+<b>min</b>
+The RxJS min() operator is used to find the minimum value emitted by an Observable. It collects and compares all the emitted values and outputs the smallest one. You can use min() either with a comparator function or by default, where it compares values as numbers.
+
+<i>Syntax:</i>
+min(comparer?: (x,y)=> number): observable
+comparer: Optional comparer function that it will use instead of its default to compare the value of two items.
+
+Checkout to the question commit of min branches, follow instructions written for min function.
+<small>commit: min</small>
