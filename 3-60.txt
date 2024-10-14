@@ -1,0 +1,9 @@
+<b>max</b>
+The RxJS max() operator is used to find the maximum value emitted by an Observable. It operates on a source Observable that emits multiple values, compares those values, and emits only the largest one when the source completes.
+
+<i>Syntax:</i>
+max(comparer?: (x,y)=> number): observable
+comparer: Optional comparer function that it will use instead of its default to compare the value of two items.
+
+Checkout to the question commit of max branches, follow instructions written for max function.
+<small>commit: max</small>
