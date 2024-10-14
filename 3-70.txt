@@ -1,0 +1,11 @@
+<b>timeInterval</b>
+The RxJS timeInterval() operator is used to create an Observable that emits a sequence of numbers at a constant time timeInterval. The first emission is 0, and it increments by 1 on each subsequent emission. It’s commonly used for tasks like polling, animations, or updating a UI at regular timeIntervals.
+Note that if the source does not emit immediately, timeInterval will calculate the passed time since subscription time.
+
+<i>Syntax:</i>
+timeInterval(): {value, interval}
+value: The original value emitted from source
+interval: The time passed since last emission.
+
+Checkout to the question commit of timeInterval branches, follow instructions written for timeInterval function.
+<small>commit: timeInterval</small>
