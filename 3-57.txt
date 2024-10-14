@@ -1,0 +1,10 @@
+<b>elementAt</b>
+The RxJS elementAt() operator emits the nth element from an observable sequence and completes after emitting that element. If the observable sequence completes before reaching the desired index, it will throw an error unless a default value is provided.
+
+<i>Syntax:</i>
+elementAt(index, defaultValue?): observable
+index: The position of the element to be emitted (0-based index)
+defaultValue: (optional): A value to emit if the observable completes before reaching the specified index.
+
+Checkout to the question commit of elementAt branches, follow instructions written for elementAt function.
+<small>commit: elementAt</small>
