@@ -1,0 +1,12 @@
+<b>fromEvent</b>
+The fromEvent() operator in RxJS creates an observable that emits values based on events from a DOM element or other event target. It's commonly used to capture events like clicks, keypresses, scrolls, or other DOM-related events, transforming them into observable streams that you can then manipulate with RxJS operators.
+
+<i>Syntax:</i>
+fromEvent(target, eventName, options?: () => value, resultSelector?): observable
+target: The DOM EventTarget, Node.js EventEmitter, JQuery-like event target, NodeList or HTMLCollection to attach the event handler to.
+eventName: The event name of interest, being emitted by the target.
+options: Optional. Options to pass through to the underlying addListener, addEventListener or on functions.
+resultSelector: A mapping function used to transform events. It takes the arguments from the event handler and should return a single value.
+
+Checkout to the question commit of fromEvent branches, follow instructions written for fromEvent function.
+<small>commit: fromEvent</small>
