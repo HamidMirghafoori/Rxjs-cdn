@@ -1,0 +1,8 @@
+<b>isEmpty</b>
+The isEmpty() operator in RxJS is a utility operator that allows you to determine whether an observable emits any items or not. It emits a single boolean value (true or false) based on the presence of emitted items.
+
+<i>Syntax:</i>
+isEmpty(): observable
+
+Checkout to the question commit of isEmpty branches, follow instructions written for isEmpty function.
+<small>commit: isEmpty</small>
