@@ -1,0 +1,11 @@
+<b>delay</b>
+The delay() operator in RxJS is used to delay the emission of items from an Observable by a specified amount of time. When applied, it shifts the emissions from the source Observable forward by the provided duration.
+
+<i>Syntax:</i>
+delay(due): observable
+due: The amount of delay in milliseconds (number) or a specific Date.
+ If a number is provided, each emission is delayed by that time. If a Date is provided, the delay is calculated relative to the current time.
+
+
+Checkout to the question commit of delay branches, follow instructions written for delay function.
+<small>commit: delay</small>
