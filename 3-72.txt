@@ -1,0 +1,10 @@
+<b>tap</b>
+The tap() operator in RxJS is used to perform side effects for notifications from the source observable. It doesn't alter the items emitted by the source, allowing you to "tap" into the observable stream for debugging, logging, or executing other actions without affecting the data flow.
+ You can tap into the emission of values (next), completion (complete), or errors (error).
+ 
+<i>Syntax:</i>
+tap(observer): observable
+observer: the function that can receive value from pipeline and won't change the pipeline state
+
+Checkout to the question commit of tap branches, follow instructions written for tap function.
+<small>commit: tap</small>
