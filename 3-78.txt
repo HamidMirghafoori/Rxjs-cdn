@@ -1,0 +1,8 @@
+<b>toArray</b>
+The toArray() operator in RxJS is used to collect all emitted values from an observable and emit them as a single array once the source observable completes. It's often useful when you want to accumulate values over time but need the entire collection at once after the observable finishes.
+
+<i>Syntax:</i>
+toArray(): OperatorFunction
+
+Checkout to the question commit of toArray branches, follow instructions written for toArray function.
+<small>commit: toArray</small>
