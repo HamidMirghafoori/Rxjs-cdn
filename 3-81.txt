@@ -1,0 +1,8 @@
+<b>EMPTY</b>
+The EMPTY operator in RxJS is a static observable that emits no items and immediately completes. It’s useful when you need an observable that does nothing but signal completion.
+
+<i>Syntax:</i>
+EMPTY()
+
+Checkout to the question commit of EMPTY branches, follow instructions written for EMPTY function.
+<small>commit: EMPTY</small>
