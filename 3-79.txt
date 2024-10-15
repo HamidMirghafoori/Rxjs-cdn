@@ -1,0 +1,9 @@
+<b>noop</b>
+The noop operator in RxJS isn't an actual operator but rather a utility function provided by RxJS. The term "noop" stands for "no operation," meaning it performs no action.
+It is often used as a placeholder callback for events you want to ignore or defer handling.
+
+<i>Syntax:</i>
+noop()
+
+Checkout to the question commit of noop branches, follow instructions written for noop function.
+<small>commit: noop</small>
