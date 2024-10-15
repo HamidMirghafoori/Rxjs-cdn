@@ -1,0 +1,11 @@
+<b>iif</b>
+The iif operator in RxJS is a creation operator that allows you to conditionally create an observable based on a boolean expression. It enables you to decide at runtime which observable to subscribe to, making it a powerful tool for handling scenarios where the source observable may vary depending on a condition.
+
+<i>Syntax:</i>
+iif(condition: () => boolean, trueResult, falseResult): observable
+condition: Condition which Observable should be chosen.
+trueResult: An Observable that will be subscribed if condition is true.
+falseResult: An Observable that will be subscribed if condition is false.
+
+Checkout to the question commit of iif branches, follow instructions written for iif function.
+<small>commit: iif</small>
