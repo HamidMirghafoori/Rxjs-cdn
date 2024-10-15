@@ -1,0 +1,9 @@
+<b>delayWhen</b>
+The delayWhen() operator in RxJS is used to delay the emission of items from the source Observable based on a provided "delay duration" Observable. This delay duration is determined dynamically for each value emitted from the source.
+
+<i>Syntax:</i>
+delayWhen(delayDurationSelector: (value, index) => Observable): OperatorFunction
+delayDurationSelector: A function that takes each value from the source Observable (and optionally its index) and returns an Observable. The source value will be emitted after this returned Observable completes.
+
+Checkout to the question commit of delayWhen branches, follow instructions written for delayWhen function.
+<small>commit: delayWhen</small>
