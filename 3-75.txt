@@ -1,0 +1,12 @@
+<b>repeat</b>
+The repeat() operator in RxJS is used to re-subscribe to an observable and re-emit its values a specified number of times, or indefinitely if no count is provided. It essentially "repeats" the observable sequence upon completion.
+
+<i>Syntax:</i>
+repeat(countOrConfig): observable
+countOrConfig: Either it can be a number to specify how many times the repeat should happen (default infinity), 
+or a config object with following attributes:
+count: number of repeat
+delay: which can be number to apply delay in milliseconds, or a function that return an observable to notify the delay time to repeat 
+
+Checkout to the question commit of repeat branches, follow instructions written for repeat function.
+<small>commit: repeat</small>
