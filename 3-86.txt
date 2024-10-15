@@ -1,0 +1,10 @@
+<b>from</b>
+The RxJS from() operator is used to emit a default value when the source observable completes without emitting any items. If the source emits any values, from() simply passes them through without modification. This operator is useful for scenarios where you expect some data to be emitted but need to handle cases where no data is produced.
+Useful in forms or APIs where no data being received is a valid case that needs to be handled gracefully.
+
+<i>Syntax:</i>
+from(array): observable
+array:  an Array, an array-like object, a Promise, an iterable object
+
+Checkout to the question commit of from branches, follow instructions written for from function.
+<small>commit: from</small>
