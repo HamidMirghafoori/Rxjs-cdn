@@ -1,0 +1,9 @@
+<b>isObservable</b>
+The isObservable() function in RxJS is a utility that checks whether a given input is an observable. It returns true if the input is an observable and false otherwise.
+It is standalone function.
+
+<i>Syntax:</i>
+isObservable(observable): observable
+
+Checkout to the question commit of isObservable branches, follow instructions written for isObservable function.
+<small>commit: isObservable</small>
