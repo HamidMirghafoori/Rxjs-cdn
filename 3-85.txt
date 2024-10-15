@@ -1,0 +1,10 @@
+<b>defaultIfEmpty</b>
+The RxJS defaultIfEmpty() operator is used to emit a default value when the source observable completes without emitting any items. If the source emits any values, defaultIfEmpty() simply passes them through without modification. This operator is useful for scenarios where you expect some data to be emitted but need to handle cases where no data is produced.
+Useful in forms or APIs where no data being received is a valid case that needs to be handled gracefully.
+
+<i>Syntax:</i>
+defaultIfEmpty(defaultValue): observable
+defaultValue: The default value used if the source Observable is empty.
+
+Checkout to the question commit of defaultIfEmpty branches, follow instructions written for defaultIfEmpty function.
+<small>commit: defaultIfEmpty</small>
