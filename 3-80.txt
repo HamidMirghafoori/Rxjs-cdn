@@ -1,0 +1,11 @@
+<b>NEVER</b>
+The RxJS NEVER operator creates an observable that never emits any values and never completes. It's essentially an observable that remains idle and does not produce any output.
+When to use NEVER:
+Cancel an operation: It can be used when you want to create an observable that effectively stops a chain of events without unsubscribing or causing errors.
+Mocking or stubbing: It is often used in testing or simulations where you want an observable that will not emit or complete.
+
+<i>Syntax:</i>
+NEVER()
+
+Checkout to the question commit of NEVER branches, follow instructions written for NEVER function.
+<small>commit: NEVER</small>
