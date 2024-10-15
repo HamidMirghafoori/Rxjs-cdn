@@ -1,0 +1,10 @@
+<b>map</b>
+The map() operator in RxJS is a transformation operator used to modify or transform the emitted values of an Observable by applying a given function to each value before passing it along. It works similarly to the map() function in arrays but applies to the values emitted by Observables.
+
+<i>Syntax:</i>
+map(project: (value, index?) => NewValue): observable
+project: A function that receive value and returns newValue after transformation
+index: (optional) The current value index for internal use
+
+Checkout to the question commit of map branches, follow instructions written for map function.
+<small>commit: map</small>
