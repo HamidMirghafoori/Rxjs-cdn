@@ -1,0 +1,9 @@
+<b>pipe</b>
+The pipe() operator in RxJS is a method used to compose and chain multiple RxJS operators together to work with an Observable stream. It allows you to apply a series of transformations or side effects to an Observable in a readable and functional way.
+
+<i>Syntax:</i>
+pipe(...functions): observable
+
+
+Checkout to the question commit of pipe branches, follow instructions written for pipe function.
+<small>commit: pipe</small>
