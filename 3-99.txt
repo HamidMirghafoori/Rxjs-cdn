@@ -1,0 +1,16 @@
+<b>mergeMap</b>
+The mergeMap operator in RxJS is used to map each emitted value from a source Observable into a new inner Observable, then flatten the inner Observables into a single Observable that emits the values from all the inner Observables in parallel (merged). Unlike some other operators (such as concatMap or switchMap), mergeMap does not wait for the previous inner Observable to complete before starting the next one.
+
+
+<i>Syntax:</i>
+mergeMap(project: (value, index) => any, resultSelector?: number | ((outerValue, innerValue, outerIndex, innerIndex) => any), concurrent: number = Infinity): any
+project: This is a function that takes two parameters: the emitted value from the source Observable and its index. 
+resultSelector: This argument can be either a number (indicating the index of the emitted value) or a function that combines the emitted values from both the source and the inner Observable. If provided, this function will take four parameters:
+-outerValue: The value emitted by the source Observable.
+-innerValue: The value emitted by the inner Observable.
+-outerIndex: The index of the emitted value from the source Observable.
+-innerIndex: The index of the emitted value from the inner Observable.
+concurrent: This parameter controls the maximum number of inner Observables that can be subscribed to simultaneously. By default, it is set to Infinity.
+
+Checkout to the question commit of mergeMap branches, follow instructions written for mergeMap function.
+<small>commit: mergeMap</small>
