@@ -1,0 +1,8 @@
+<b>concatAll</b>
+The concatAll() operator in RxJS is a higher-order mapping operator that flattens an observable of observables by concatenating them in order. When you have an observable that emits inner observables (also called higher-order observables), concatAll() will subscribe to the first emitted observable, wait for it to complete, and then move on to the next observable, processing them sequentially.
+
+<i>Syntax:</i>
+concatAll(): observable
+
+Checkout to the question commit of concatAll branches, follow instructions written for concatAll function.
+<small>commit: concatAll</small>
