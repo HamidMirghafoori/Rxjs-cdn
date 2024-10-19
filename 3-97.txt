@@ -1,0 +1,8 @@
+<b>forkJoin</b>
+The RxJS forkJoin() operator is standalone operator and it is used to combine multiple observables and emit their last values once all of them complete. It behaves similarly to Promise.all(), where it waits for all the provided observables to finish and then emits an array (or an object) containing the final values from each observable.
+
+<i>Syntax:</i>
+forkJoin(observables[]): observable
+
+Checkout to the question commit of forkJoin branches, follow instructions written for forkJoin function.
+<small>commit: forkJoin</small>
