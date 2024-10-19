@@ -1,0 +1,9 @@
+<b>merge</b>
+The merge() operator in RxJS is used to combine multiple observables into one, allowing all the emitted values from the input observables to be emitted concurrently as they occur. This means that the output observable will emit items from all input observables as soon as they produce values, without waiting for the others to complete.
+merge is both standalone and pipeable operator
+
+<i>Syntax:</i>
+merge(...observables): observable
+
+Checkout to the question commit of merge branches, follow instructions written for merge function.
+<small>commit: merge</small>
