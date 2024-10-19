@@ -1,0 +1,8 @@
+<b>exhaustAll</b>
+The exhaustAll() operator in RxJS is used to handle observables that emit observables (higher-order observables). It works by subscribing to the first emitted inner observable and ignoring any subsequent inner observables until the current one completes
+
+<i>Syntax:</i>
+exhaustAll(): observable
+
+Checkout to the question commit of exhaustAll branches, follow instructions written for exhaustAll function.
+<small>commit: exhaustAll</small>
