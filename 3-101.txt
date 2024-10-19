@@ -1,0 +1,10 @@
+<b>mergeWith</b>
+The mergeWith() operator in RxJS is a powerful utility that allows you to combine multiple observables into a single observable. It merges the emissions of the source observable with the emissions of one or more other observables. The combined observable emits values from the source observable and any of the other observables concurrently.
+Note: If the source observable completes, the merged observable will complete as well, but the other observables will continue to emit values until they complete or error out.
+Note: use mergeMap() when you need to transform values from an observable into new observables, and use mergeWith() when you simply want to combine multiple observables into a single observable stream.
+
+<i>Syntax:</i>
+mergeWith(...observables): any
+
+Checkout to the question commit of mergeWith branches, follow instructions written for mergeWith function.
+<small>commit: mergeWith</small>
