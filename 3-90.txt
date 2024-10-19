@@ -1,0 +1,18 @@
+<b>concatMap</b>
+The concatMap operator in RxJS is used to map each value emitted by an observable into a new observable, and then flatten the result in a sequential manner. This means that it processes each inner observable one after the other, waiting for the previous one to complete before subscribing to the next.
+
+<i>Syntax:</i>
+concatMap(project: (value, index) => Observable, resultSelector?: (outerValue, innerValue, outerIndex, innerIndex) => value): observable
+project:
+A function that takes two arguments:
+value: The value emitted by the source observable.
+index: The index of the value in the source observable.
+resultSelector (optional):
+A function that takes four arguments:
+outerValue: The value emitted by the source observable.
+innerValue: The value emitted by the inner observable returned by the project function.
+outerIndex: The index of the value from the source observable.
+innerIndex: The index of the value from the inner observable.
+
+Checkout to the question commit of concatMap branches, follow instructions written for concatMap function.
+<small>commit: concatMap</small>
