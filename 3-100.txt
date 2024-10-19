@@ -1,0 +1,9 @@
+<b>mergeAll</b>
+The mergeAll() operator in RxJS is used to flatten higher-order observables, which are observables that emit other observables. When you have an observable that emits multiple inner observables over time, mergeAll() can be used to combine those emissions into a single observable stream.
+
+<i>Syntax:</i>
+mergeAll(concurrent?: number = Infinity): any
+concurrent: (optional) This parameter controls the maximum number of inner Observables that can be subscribed to simultaneously. By default, it is set to Infinity.
+
+Checkout to the question commit of mergeAll branches, follow instructions written for mergeAll function.
+<small>commit: mergeAll</small>
