@@ -1,0 +1,12 @@
+<b>distinctUntilChanged</b>
+The distinctUntilChanged() operator in RxJS is used to filter out consecutive, duplicate values emitted by an observable, allowing only distinct values to pass through. It ensures that the observable only emits a new value when it's different from the previous one.
+Note that overall emitted data can have repeated values, because it just emits if the value differs from previous one.
+Also note when we select an attribute in keySelector, that attribute value will be the previous and current value, not the whole object
+
+<i>Syntax:</i>
+distinctUntilChanged(comparator?: (previous, current) => boolean, keySelector?: (value) => value): observable
+comparator: Optional function that performs custom comparison, it receives previous and current value to be compared
+keySelector: Optional function to select the attribute for the comparison
+
+Checkout to the question commit of distinctUntilChanged branches, follow instructions written for distinctUntilChanged function.
+<small>commit: distinctUntilChanged</small>
