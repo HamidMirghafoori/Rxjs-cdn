@@ -1,0 +1,8 @@
+<b>concat</b>
+The concat() operator in RxJS is used to sequentially combine multiple observables, meaning it subscribes to each observable in order and waits for each one to complete before moving to the next. It guarantees that the emissions from the observables occur in the order they are provided.
+
+<i>Syntax:</i>
+concat(...observables): observable
+
+Checkout to the question commit of concat branches, follow instructions written for concat function.
+<small>commit: concat</small>
