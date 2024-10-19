@@ -1,0 +1,8 @@
+<b>concatWith</b>
+The concatWith() operator in RxJS is used to concatenate observables in a sequence. It subscribes to each observable one after the other, ensuring that each observable only starts emitting values after the previous one completes. It works similarly to the concat() operator but is used as an instance method on an observable rather than as a standalone function.
+
+<i>Syntax:</i>
+concatWith(...observables): observable
+
+Checkout to the question commit of concatWith branches, follow instructions written for concatWith function.
+<small>commit: concatWith</small>
