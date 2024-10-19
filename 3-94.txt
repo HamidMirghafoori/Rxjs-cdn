@@ -1,0 +1,11 @@
+<b>distinctUntilKeyChanged</b>
+The distinctUntilKeyChanged operator in RxJS is used to filter out consecutive repeated values based on a specific key in objects emitted by an observable. It ensures that only distinct values are passed downstream when the specified key's value changes between successive emissions.
+Note distinctUntilKeyChanged is specific version of distinctUntilChanged, which only works on objects and one key.
+
+<i>Syntax:</i>
+distinctUntilKeyChanged(key, comparator?: (previous, current) => boolean): observable
+key: the key in the object will be used for comparison
+comparator: Optional function that performs custom comparison, it receives previous and current value to be compared
+
+Checkout to the question commit of distinctUntilKeyChanged branches, follow instructions written for distinctUntilKeyChanged function.
+<small>commit: distinctUntilKeyChanged</small>
