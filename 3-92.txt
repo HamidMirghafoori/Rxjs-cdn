@@ -1,0 +1,10 @@
+<b>distinct</b>
+The distinct() operator in RxJS is used to filter out repeated values from an observable sequence based on strict equality. It only emits unique values, meaning once a value has been emitted, any subsequent emissions of the same value will be ignored.
+
+<i>Syntax:</i>
+distinct(keySelector?: (value) => value, flushes?: observable): observable
+keySelector: Optional function to select which value you want to check as distinct.
+flushes: Optional ObservableInput for flushing the internal HashSet of the operator.
+
+Checkout to the question commit of distinct branches, follow instructions written for distinct function.
+<small>commit: distinct</small>
