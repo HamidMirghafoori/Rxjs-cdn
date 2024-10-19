@@ -1,0 +1,15 @@
+<b>exhaustMap</b>
+The exhaustMap() operator in RxJS is used to map each value emitted by a source observable into an inner observable, and then merge its emissions into the output observable. However, it has a unique behavior: it ignores all new source emissions until the currently active inner observable completes. This makes it particularly useful in scenarios where you want to ignore new events that happen while a previous observable is still processing.
+Note that switchMap cancels the previous emission and starts over, exhaustMap just ignores new emissions.
+
+<i>Syntax:</i>
+exhaustMap(project: (value, index) => Observable, resultSelector?: (outerValue, innerValue, outerIndex, innerIndex) => value): observable
+project: A function that receives the outer value (from the source observable) and its index and returns an inner observable.
+resultSelector (optional): A function that gets the outer value, inner value, outer index, and inner index. It’s used to combine the emitted values from the outer and inner observables into a result.
+
+Common Use Cases:
+Form submissions: Prevent multiple form submissions while a request is pending.
+Rate limiting: Only process one event at a time, ignoring others until the current one completes.
+
+Checkout to the question commit of exhaustMap branches, follow instructions written for exhaustMap function.
+<small>commit: exhaustMap</small>
