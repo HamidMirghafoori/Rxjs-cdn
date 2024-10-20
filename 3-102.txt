@@ -1,0 +1,14 @@
+<b>switchMap</b>
+The switchMap() operator in RxJS is a higher-order mapping operator that transforms each value emitted by an observable into a new observable. It "switches" to the latest observable emitted by the mapping function, unsubscribing from any previous one.
+
+<i>Syntax:</i>
+switchMap(project: (value, index) => any, resultSelector?: (outerValue, innerValue, outerIndex, innerIndex) => any): any
+project: This is a function that takes two parameters: the emitted value from the source Observable and its index. 
+resultSelector: This argument is a function that combines the emitted values from both the source and the inner Observable. If provided, this function will take four parameters:
+-outerValue: The value emitted by the source Observable.
+-innerValue: The value emitted by the inner Observable.
+-outerIndex: The index of the emitted value from the source Observable.
+-innerIndex: The index of the emitted value from the inner Observable.
+
+Checkout to the question commit of switchMap branches, follow instructions written for switchMap function.
+<small>commit: switchMap</small>
