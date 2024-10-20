@@ -1,0 +1,9 @@
+<b>switchAll</b>
+The RxJS switchAll() operator is used to flatten higher-order observables, which means it transforms an observable that emits other observables into a single observable that emits values from the most recent inner observable.
+Note if the higher order observable returns combination of multiple observables switchAll will subscribe to all of them.
+
+<i>Syntax:</i>
+switchAll(): any
+
+Checkout to the question commit of switchAll branches, follow instructions written for switchAll function.
+<small>commit: switchAll</small>
