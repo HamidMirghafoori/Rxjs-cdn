@@ -1,0 +1,10 @@
+<b>sequenceEqual</b>
+The RxJS sequenceEqual() operator is used to compare two observables to check if they emit the same sequence of values in the same order and complete successfully. If the emissions from both observables match exactly, the output observable emits true. If there’s any mismatch in the emissions or if one observable completes while the other still emits values, the output emits false
+
+<i>Syntax:</i>
+sequenceEqual(compareTo, comparator?)
+compareTo: The ObservableInput sequence to compare the source sequence to.
+comparator: Optional. Default is (a, b) => a === b. An optional function to compare each value pair.
+
+Checkout to the question commit of sequenceEqual branches, follow instructions written for sequenceEqual function.
+<small>commit: sequenceEqual</small>
