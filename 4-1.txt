@@ -1,0 +1,10 @@
+<b>defer</b>
+The defer() operator in RxJS creates an observable that does not immediately create or subscribe to the underlying observable, but instead defers the creation of the observable until an observer subscribes to it.
+In other words, defer() allows you to generate a fresh observable for each subscription, which can be useful when you want to ensure that the observable is created dynamically based on the time of subscription, not when the defer() is called.
+
+<i>Syntax:</i>
+defer(observableFactory: () => R): observable
+observableFactory is a function that returns an observable.
+
+Checkout to the question commit of defer branches, follow instructions written for defer function.
+<small>commit: defer</small>
