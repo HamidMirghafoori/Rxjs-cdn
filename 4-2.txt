@@ -1,0 +1,10 @@
+<b>firstValueFrom</b>
+The firstValueFrom() function in RxJS is a utility that converts an observable into a Promise and resolves with the first emitted value. It's commonly used when you need to get a single value from an observable stream and are working in an asynchronous context that supports promises (such as async/await).
+ If the observable completes without emitting a value, the Promise will be rejected with an EmptyError.
+
+<i>Syntax:</i>
+firstValueFrom(observable, {defaultValue?}): Promise
+defaultValue: (optional) This property allows you to provide a fallback value in case the observable completes without emitting any value. If no value is emitted and no defaultValue is provided, the Promise will be rejected with an EmptyError.
+
+Checkout to the question commit of firstValueFrom branches, follow instructions written for firstValueFrom function.
+<small>commit: firstValueFrom</small>
