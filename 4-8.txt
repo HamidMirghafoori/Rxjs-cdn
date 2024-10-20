@@ -1,0 +1,13 @@
+<b>generate</b>
+The generate operator in RxJS is a powerful utility that allows you to create an observable that emits a sequence of values based on a specified logic. It is particularly useful for generating sequences of numbers or custom objects with specific rules.
+generate allows you to create a stream of values generated with a loop very similar to a traditional for loop.
+
+<i>Syntax:</i>
+generate({initialState, condition, iterate, resultSelector}): observable
+initialState: The initial value from which the generation starts.
+condition: A function that takes the current state and returns a boolean indicating whether to continue generating values.
+iterate: A function that defines how to update the state after each emission. This function is called if the condition is true.
+resultSelector (optional): A function that transforms the state into the emitted value. If not provided, the state itself is emitted.
+
+Checkout to the question commit of generate branches, follow instructions written for generate function.
+<small>commit: generate</small>
