@@ -1,0 +1,9 @@
+<b>timestamp</b>
+The timestamp() operator in RxJS is used to annotate each emitted value from an observable with the time at which the value was emitted. This can be particularly useful for tracking when events occur or for debugging purposes.
+
+<i>Syntax:</i>
+timestamp(timestampProvider?): value
+timestampProvider: Optional. Default is dateTimestampProvider. An object with a now() method used to get the current timestamp.
+
+Checkout to the question commit of timestamp branches, follow instructions written for timestamp function.
+<small>commit: timestamp</small>
