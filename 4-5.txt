@@ -1,0 +1,9 @@
+<b>throwIfEmpty</b>
+The throwIfEmpty() operator in RxJS is used to throw an error if an observable completes without emitting any values. It is typically used when you want to ensure that an observable stream contains at least one value and trigger an error if the observable is empty
+
+<i>Syntax:</i>
+throwIfEmpty(errorFactory?): error
+errorFactory (optional): A function that returns the error object to be thrown. If omitted, a default EmptyError is thrown.
+
+Checkout to the question commit of throwIfEmpty branches, follow instructions written for throwIfEmpty function.
+<small>commit: throwIfEmpty</small>
