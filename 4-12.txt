@@ -1,0 +1,11 @@
+<b>using</b>
+The using operator in RxJS creates an observable that depends on a resource, typically a resource that needs to be disposed of after the observable completes or errors. It ensures that the resource is properly cleaned up when the observable lifecycle is over.
+The using operator is useful when working with external resources (like file handles, subscriptions, or connections) that need to be explicitly released once the observable completes, errors, or is unsubscribed.
+
+<i>Syntax:</i>
+using(resourceFactory: () => { unsubscribe() }, observableFactory: (resource) => Observable): Observable
+resourceFactory: A function that creates the resource, which must have an unsubscribe() method. This method will be called when the observable completes or errors.
+observableFactory: A function that creates an observable and is passed the resource created by resourceFactory.
+
+Checkout to the question commit of using branches, follow instructions written for using function.
+<small>commit: using</small>
