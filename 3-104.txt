@@ -1,0 +1,9 @@
+<b>withLatestFrom</b>
+The RxJS withLatestFrom operator is used to combine the values of multiple observables, emitting a new value from the source observable along with the latest values from the other observables when the source emits
+The withLatestFrom operator does not emit anything until the source observable emits. At that point, it takes the latest value from each of the provided observables and combines them into an array or according to a projection function (if provided).
+
+<i>Syntax:</i>
+withLatestFrom(...inputs, (value0, value1, ...)=>any): any
+
+Checkout to the question commit of withLatestFrom branches, follow instructions written for withLatestFrom function.
+<small>commit: withLatestFrom</small>
