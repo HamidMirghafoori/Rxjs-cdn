@@ -1,0 +1,14 @@
+<b>share</b>
+The share() operator in RxJS is used to make an observable "hot" by sharing a single subscription to the source observable among multiple subscribers. Without it, each subscriber would create a new subscription, meaning the source observable would run separately for each subscriber.
+
+<i>Syntax:</i>
+share(options?): any
+options: Are for edge cases and will be discussed in Advanced section
+consists of following options which all are optional:
+ {connector?: () => SubjectLike,
+  resetOnError?: boolean | ((error: any) => ObservableInput<any>),
+  resetOnComplete?: boolean | (() => ObservableInput<any>),
+  resetOnRefCountZero?: boolean }
+  
+Checkout to the question commit of share branches, follow instructions written for share function.
+<small>commit: share</small>
