@@ -1,0 +1,10 @@
+<b>lastValueFrom</b>
+The lastValueFrom() function in RxJS is a utility that converts an Observable into a Promise and resolves to the last value emitted by the Observable before it completes.
+ If the Observable does not complete (e.g., it's infinite), the Promise returned by lastValueFrom() will never resolve. So it is good practice to add something like timeout, take, takeWhile, or takeUntil amongst others.
+
+<i>Syntax:</i>
+lastValueFrom(observable, {defaultValue?}): Promise
+defaultValue: (optional) This property allows you to provide a fallback value in case the observable completes without emitting any value.
+
+Checkout to the question commit of lastValueFrom branches, follow instructions written for lastValueFrom function.
+<small>commit: lastValueFrom</small>
