@@ -1,0 +1,9 @@
+<b>ignoreElements</b>
+The RxJS ignoreElements() operator is used to ignore all emitted values from the source Observable but allows its termination notifications, such as complete or error, to pass through.
+ignoreElements() is useful when you are only interested in knowing if an Observable completes or errors out, and you don’t care about the actual emitted data.
+
+<i>Syntax:</i>
+ignoreElements()
+
+Checkout to the question commit of ignoreElements branches, follow instructions written for ignoreElements function.
+<small>commit: ignoreElements</small>
