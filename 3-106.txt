@@ -1,0 +1,12 @@
+<b>shareReplay</b>
+The RxJS shareReplay() operator is a combination of two operators: share() and replay(). It is used to share a single subscription to an observable among multiple subscribers, while also replaying a specified number of emitted values to new subscribers that join after the source has already emitted values.
+
+<i>Syntax:</i>
+shareReplay(bufferSize?, windowTime?, refCount?): observable
+bufferSize: Specifies how many of the most recent values should be buffered and replayed to new subscribers. Default is infinity.
+windowTime: Specifies the time window in milliseconds within which the values are replayed. Only values emitted within this time window are buffered and replayed to new subscribers. default is Infinity
+refCount: default is false.  If true, the observable will remain active (i.e., connected to the source) as long as there is at least one active subscriber. When all subscribers unsubscribe, the observable will stop emitting values and reset. When a new subscriber arrives, the observable will start again from the source.
+This is useful if you only want the observable to keep running while there are active subscribers. If set to false, the observable will remain connected even after all subscribers have unsubscribed.
+  
+Checkout to the question commit of shareReplay branches, follow instructions written for shareReplay function.
+<small>commit: shareReplay</small>
