@@ -1,0 +1,9 @@
+<b>identity</b>
+The identity operator in RxJS is a simple yet useful operator that acts as an identity function. It takes an observable as input and outputs the same observable without making any modifications. This means that the output observable emits the same values as the input observable.
+ it can be beneficial in more complex scenarios where a transformation is required but no actual transformation logic is necessary.
+
+<i>Syntax:</i>
+identity
+
+Checkout to the question commit of identity branches, follow instructions written for identity function.
+<small>commit: identity</small>
