@@ -1,0 +1,9 @@
+<b>onErrorResumeNextWith</b>
+The onErrorResumeNextWith operator in RxJS is used to handle errors gracefully by allowing an observable sequence to continue with one or more additional observable sequences when an error occurs. It ensures that the error in the original observable doesn't propagate and instead switches to the next observable, ignoring the error.
+
+<i>Syntax:</i>
+onErrorResumeNextWith(observable, {defaultValue?}): value
+defaultValue: (optional) This property allows you to provide a fallback value in case the observable completes without emitting any value.
+
+Checkout to the question commit of onErrorResumeNextWith branches, follow instructions written for onErrorResumeNextWith function.
+<small>commit: onErrorResumeNextWith</small>
