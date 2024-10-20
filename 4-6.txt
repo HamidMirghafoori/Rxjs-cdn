@@ -1,0 +1,8 @@
+<b>pairwise</b>
+The pairwise() operator in RxJS is a useful operator that emits the previous and current values as an array whenever the source observable emits a new value. This operator is particularly helpful for scenarios where you want to compare the current value with the previous value.
+
+<i>Syntax:</i>
+pairwise(): value
+
+Checkout to the question commit of pairwise branches, follow instructions written for pairwise function.
+<small>commit: pairwise</small>
