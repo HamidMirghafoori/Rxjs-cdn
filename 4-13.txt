@@ -1,0 +1,14 @@
+<b>expand</b>
+The expand operator in RxJS is used to recursively apply a projection function to the values emitted by an observable. It works like a combination of mergeMap and recursion, allowing you to generate an observable that can emit more values based on previously emitted ones
+
+
+<i>Syntax:</i>
+expand(project: (value, index) => Observable, concurrent?): Observable
+project: This is the core function that determines how each value emitted by the source observable is transformed into a new observable
+value: The current value emitted by the source observable
+index: The zero-based index of the emitted value, which allows you to track how many values have been processed
+concurrent?: This optional parameter controls the number of concurrent subscriptions that expand can have at any given time. It limits how many new observables (created by the project function) can be subscribed to simultaneously
+This optional parameter controls the number of concurrent subscriptions that expand can have at any given time. It limits how many new observables (created by the project function) can be subscribed to simultaneously
+
+Checkout to the question commit of expand branches, follow instructions written for expand function.
+<small>commit: expand</small>
