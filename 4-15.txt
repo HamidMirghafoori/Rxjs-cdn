@@ -1,0 +1,9 @@
+<b>dematerialize</b>
+The dematerialize() operator in RxJS is used to reverse the transformation applied by the materialize() operator. It converts a stream of Notification objects back into their original emissions (next, error, or complete).
+This is useful in situations where you need to inspect or modify an observable's emission events (values, errors, or completion) and then restore the observable back to its original form.
+
+<i>Syntax:</i>
+dematerialize(): Observable
+
+Checkout to the question commit of dematerialize branches, follow instructions written for dematerialize function.
+<small>commit: dematerialize</small>
