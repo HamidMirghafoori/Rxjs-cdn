@@ -1,0 +1,13 @@
+<b>fromFetch</b>
+The fromFetch operator in RxJS is a utility that creates an observable from a fetch request, similar to the native fetch API in JavaScript, but integrated into the reactive programming model. It allows you to use reactive operators like map, switchMap, catchError, etc., for working with HTTP requests.
+Note: fromFetch in RxJS does not natively support interceptors like Angular's HttpClient does.
+
+<i>Syntax:</i>
+fromFetch(input | Request, init & { selector: (response) => Observable}): Observable
+input: a url string. 
+request: for more information see: https://developer.mozilla.org/en-US/docs/Web/API/Request
+init: for more information see: https://developer.mozilla.org/en-US/docs/Web/API/RequestInit
+selector: a function to transform the response
+
+Checkout to the question commit of fromFetch branches, follow instructions written for fromFetch function.
+<small>commit: fromFetch</small>
