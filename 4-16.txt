@@ -1,0 +1,9 @@
+<b>connectable</b>
+The connectable() operator in RxJS is used to create a Connectable Observable. This is a special type of Observable that doesn't start emitting values until you explicitly call the connect() method on it. This can be particularly useful in scenarios where you want to control when the emissions start, especially in multicasting scenarios where multiple subscribers might want to share the same emissions.
+Manual connection is the most important benefit of using connectable instead of share
+
+<i>Syntax:</i>
+connectable(): Observable
+
+Checkout to the question commit of connectable branches, follow instructions written for connectable function.
+<small>commit: connectable</small>
