@@ -1,0 +1,14 @@
+<b>fromEventPattern</b>
+The fromEventPattern operator in RxJS is used to create an observable from a custom event pattern where you have separate mechanisms to add and remove event listeners. It is particularly useful when working with non-standard event systems or custom APIs that don't have built-in support for observable event streams.
+
+use cases:
+When you are dealing with third-party libraries or custom APIs that don’t follow the DOM event pattern.
+To work with any system where event registration and unregistration are handled manually.
+
+<i>Syntax:</i>
+fromEventPattern(addHandler, removeHandler?): Observable
+addHandler: A function that registers an event listener.
+removeHandler(optional): A function that removes the event listener when the observable is unsubscribed.
+
+Checkout to the question commit of fromEventPattern branches, follow instructions written for fromEventPattern function.
+<small>commit: fromEventPattern</small>
