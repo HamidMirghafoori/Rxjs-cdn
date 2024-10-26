@@ -1,0 +1,26 @@
+<b>ajax</b>
+The ajax() operator in RxJS is used to make HTTP requests, returning an Observable that emits the response. It is part of the rxjs/ajax package and provides a simple way to perform asynchronous HTTP operations like GET, POST, PUT, DELETE, etc.
+the downside of using ajax is it doesn't integrate Angular HttpClient interceptors.
+
+<i>Syntax:</i>
+ajax(url | AjaxConfig): Observable
+AjaxConfig fields:
+  url: string
+  body?: any
+  async?: boolean
+  method?: string
+  headers?: Readonly<Record<string, any>>
+  timeout?: number
+  user?: string
+  password?: string
+  withCredentials?: boolean
+  xsrfCookieName?: string
+  xsrfHeaderName?: string
+  responseType?: XMLHttpRequestResponseType
+  createXHR?: () => XMLHttpRequest
+  includeDownloadProgress?: boolean
+  includeUploadProgress?: boolean
+   queryParams?: string | URLSearchParams | Record<string, string | number | boolean | string[] | number[] | boolean[]>
+
+Checkout to the question commit of ajax branches, follow instructions written for ajax function.
+<small>commit: ajax</small>
