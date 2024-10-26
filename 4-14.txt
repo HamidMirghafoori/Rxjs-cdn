@@ -1,0 +1,14 @@
+<b>materialize</b>
+The materialize() operator in RxJS is used to transform the emissions of an observable into notification objects. Each emission (next, error, or complete) is converted into a Notification object that describes the type of emission
+When you apply materialize() to an observable, the following happens:
+next values are converted into Notification objects with the type "N" (next) and the value wrapped inside the notification.
+error notifications are converted into Notification objects with the type "E" (error), including the error information.
+complete notifications are converted into Notification objects with the type "C" (complete).
+
+It allows deeper control and inspection over the observable execution process, making it useful in specific cases like logging, debugging, or conditional behavior based on the observable's events.
+
+<i>Syntax:</i>
+materialize(): Observable
+
+Checkout to the question commit of materialize branches, follow instructions written for materialize function.
+<small>commit: materialize</small>
